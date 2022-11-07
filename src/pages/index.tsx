@@ -1,4 +1,4 @@
-import { Title } from 'ui';
+import { Title } from 'ui/framework/Title/Title';
 import Head from 'next/head'
 import Image from 'next/image'
 

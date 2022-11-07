@@ -1,4 +1,4 @@
-import { render } from 'test-utils/testing-library-utils';
+import { render } from '@testing-library/react';
 import { Flex } from './Flex';
 
 describe('Flex component test', () => {

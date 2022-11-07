@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
-import { DRIThemeDefinition } from 'ui/theme/theme';
+import { DRIThemeDefinition } from 'ui/theme';
 
 const theme = {
 	colors: {
