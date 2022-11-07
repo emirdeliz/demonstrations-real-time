@@ -1,11 +1,9 @@
-import {
-  buildMargin,
-  getFontSize,
-  getLineHeight,
-  getThemeColor,
-} from 'framework/ui/system/theme';
-import { getDisplay } from 'framework/ui/system/theme/display';
 import styled from 'styled-components';
+import { getThemeColor } from 'ui/theme/color';
+import { getThemeDisplay } from 'ui/theme/display';
+import { getThemeFontSize } from 'ui/theme/font-size';
+import { getThemeLineHeight } from 'ui/theme/lineHeight';
+import { getThemeSpaceOnlyAsMargin } from 'ui/theme/space';
 import { TitleProps } from './Title';
 
 export const Title = styled.span<TitleProps>`
@@ -19,17 +17,19 @@ export const Title = styled.span<TitleProps>`
     theme,
     error,
     ...props
-  }) => `
-    vertical-align: middle;
-    font-size: ${getFontSize({ theme, ...props })};
-    text-transform: ${
-      capitalize ? 'capitalize' : uppercase ? 'uppercase' : 'none'
-    };
-    font-weight: ${semibold ? theme.fontWeight.Semibold : 'normal'};
-    cursor: ${cursorPointer ? 'pointer' : 'auto'};
-    white-space: ${noWrap ? 'nowrap' : 'initial'};
-    color: ${error ? theme.colors.Red : getThemeColor(props)};
-  `}
+  }) => {
+		 const margin = getThemeSpaceOnlyAsMargin({ ...props, theme });
+		return `
+			vertical-align: middle;
+			font-size: ${getThemeFontSize({ theme, ...props })};
+			text-transform: ${capitalize ? 'capitalize' : uppercase ? 'uppercase' : 'none'};
+			font-weight: ${semibold ? theme.fontWeight.Semibold : 'normal'};
+			cursor: ${cursorPointer ? 'pointer' : 'auto'};
+			white-space: ${noWrap ? 'nowrap' : 'initial'};
+			color: ${error ? theme.color.Red : getThemeColor({ theme, ...props })};
+			margin: ${margin.join(' ')};
+		`;
+	}}
   ${({ center, justify }) =>
     center || justify
       ? `
@@ -46,7 +46,6 @@ export const Title = styled.span<TitleProps>`
     width: calc(100%);
   `
       : ''};
-  line-height: ${(props) => getLineHeight(props)};
-  display: ${(props) => getDisplay(props)};
-  ${buildMargin()}
+  line-height: ${(props) => getThemeLineHeight(props)};
+  display: ${(props) => getThemeDisplay(props)};
 `;

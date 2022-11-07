@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { memo, ReactNode } from 'react';
 import { DRIThemeSpaceProps } from 'ui/theme/space';
 import * as S from './Flex.style';
 
@@ -25,13 +25,15 @@ export interface FlexProps extends DRIThemeSpaceProps {
   role?: string;
 }
 
-export const Flex = ({ wrap, ...props }: FlexProps) => {
+const FlexBase = memo(({ wrap, ...props }: FlexProps) => {
   return (
     <S.Container {...props} flexWrap={wrap ? 1 : 0}>
       {props.children}
     </S.Container>
   );
-};
+});
+
+export const Flex = (props: FlexProps) => <FlexBase {...props} />;
 
 Flex.Row = (props: FlexProps) => {
   return <Flex {...props} row />;

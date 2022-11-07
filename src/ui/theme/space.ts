@@ -65,35 +65,15 @@ export interface DRIThemeSpaceGetProps {
 }
 
 export const getThemeSpace = ({
-  sp0,
-  sp1,
-  sp2,
-  sp3,
-  sp4,
-  sp5,
-  sp6,
   theme,
+	...props
 }: DRIThemeSpaceProps & {
   theme: DefaultTheme;
 }) => {
-  switch (true) {
-    case sp0:
-      return theme.space.sp0;
-    case sp1:
-      return theme.space.sp1;
-    case sp2:
-      return theme.space.sp2;
-    case sp3:
-      return theme.space.sp3;
-    case sp4:
-      return theme.space.sp4;
-    case sp5:
-      return theme.space.sp5;
-    case sp6:
-      return theme.space.sp6;
-    default:
-      return 0;
-  }
+	const key = Object.keys(props).find(
+    (p) => !!props[p as keyof DRIThemeSpaceProps]
+  );
+  return key ? theme.space[key as keyof DRIThemeSpaceProps] : theme.space.sp0;
 };
 
 export const getThemeSpaceOnly = ({

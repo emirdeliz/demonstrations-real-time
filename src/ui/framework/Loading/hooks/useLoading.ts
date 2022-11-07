@@ -1,5 +1,5 @@
-import { LoadingContext } from 'framework/ui/atoms';
 import { useCallback, useContext, useMemo } from 'react';
+import { LoadingContext } from '../Loading';
 
 export interface LoadingSimpleMessageProps {
   title?: string;

@@ -4,6 +4,12 @@ export enum DRIThemeFontWeight {
   Semibold = '600',
 }
 
+export interface DRIThemeFontWeightDefinition {
+  Regular: 'Regular';
+  Medium: 'Medium';
+  Semibold: 'Semibold';
+}
+
 export interface DRIThemeFontWeightProps {
   fw1?: boolean;
   fw2?: boolean;

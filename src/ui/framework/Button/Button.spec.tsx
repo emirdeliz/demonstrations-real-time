@@ -1,6 +1,7 @@
-import { fireEvent } from '@testing-library/react';
-import { render } from 'test-utils/testing-library-utils';
-import { Colors, Opacity, Padding } from 'framework/ui/system/theme';
+import { fireEvent, render } from '@testing-library/react';
+import { DRIThemeColorDark } from 'ui/theme/color';
+import { DRIThemeOpacity } from 'ui/theme/opacity';
+import { DRIThemeSpace } from 'ui/theme/space';
 import { Button } from './Button';
 
 describe('Button component test', () => {
@@ -13,7 +14,7 @@ describe('Button component test', () => {
     const { container: buttonNode } = render(<Button info />);
     expect(buttonNode.firstChild).toHaveStyleRule(
       'background-color',
-      Colors.P2
+      DRIThemeColorDark.P1
     );
   });
 
@@ -21,7 +22,7 @@ describe('Button component test', () => {
     const { container: buttonNode } = render(<Button clickable={false} />);
     expect(buttonNode.firstChild).toHaveStyleRule(
       'opacity',
-      String(Opacity.Disable)
+      String(DRIThemeOpacity.Disable)
     );
     expect(buttonNode.firstChild).toHaveStyleRule('cursor', 'not-allowed');
   });
@@ -30,20 +31,23 @@ describe('Button component test', () => {
     const { container: buttonNode } = render(<Button outlined />);
     expect(buttonNode.firstChild).toHaveStyleRule(
       'background-color',
-      '#ffffff'
+      DRIThemeColorDark.P1
     );
     expect(buttonNode.firstChild).toHaveStyleRule(
       'border',
-      `solid 1px ${Colors.P2}`
+      `solid 1px ${DRIThemeColorDark.P1}`
     );
-    expect(buttonNode.firstChild).toHaveStyleRule('color', Colors.P2);
+    expect(buttonNode.firstChild).toHaveStyleRule(
+      'color',
+      DRIThemeColorDark.P1
+    );
   });
 
   it('Have button sm', async () => {
-    const { container: buttonNode } = render(<Button sm />);
+    const { container: buttonNode } = render(<Button fs1 sp1 />);
     expect(buttonNode.firstChild).toHaveStyleRule(
       'padding',
-      `${Padding.Xs} ${Padding.Xs}`
+      `${DRIThemeSpace.Sp1} ${DRIThemeSpace.Sp1}`
     );
   });
 

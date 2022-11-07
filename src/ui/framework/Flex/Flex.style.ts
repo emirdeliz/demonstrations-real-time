@@ -1,5 +1,8 @@
 import styled from 'styled-components';
-import { buildMargin, buildPadding } from 'framework/ui/system/theme';
+import {
+  getThemeSpaceOnlyAsMargin,
+  getThemeSpaceOnlyAsPadding,
+} from 'ui/theme/space';
 import { FlexProps } from './Flex';
 
 const getAlign = (
@@ -64,8 +67,14 @@ export const Container = styled.div<FlexProps & { flexWrap: number }>`
       alignBaseline
     );
   }};
-  ${buildMargin()}
-  ${buildPadding()}
+  ${(props) => {
+    const margin = getThemeSpaceOnlyAsMargin(props);
+    const padding = getThemeSpaceOnlyAsPadding(props);
+    return `
+			${margin && margin.length ? `margin: ${margin.join(' ')}` : ''}
+			${padding && padding.length ? `padding: ${padding.join(' ')}` : ''}
+		`;
+  }}
   ${({ hFull, wFull }) => `
 		${wFull ? 'width: 100%' : ''};
 		${hFull ? 'height: 100%' : ''};

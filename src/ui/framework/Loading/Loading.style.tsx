@@ -1,5 +1,5 @@
-import { centerAbsolute, fullAbsolute } from 'framework/ui/system/theme';
 import styled, { css, keyframes } from 'styled-components';
+import { centerAbsolute, fullAbsolute } from 'ui/theme/mixins';
 
 interface PathProps {
   increase?: boolean;
@@ -13,7 +13,7 @@ export const Container = styled.div<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: ${({ theme }) => theme.zIndex.Nm};
+  z-index: ${({ theme }) => theme.zIndex.ZI1};
   ${({ center }) => (center ? centerAbsolute : '')};
 `;
 
@@ -63,7 +63,7 @@ export const PathFull = styled.path.attrs({
 		53.2808L66.6433 56.3922L48.935 73.923Z
 	`,
 })`
-  fill: ${({ theme }) => theme.colors.White};
+  fill: ${({ theme }) => theme.color.White};
 `;
 
 const blink = keyframes`
@@ -89,7 +89,7 @@ export const RectFull = styled.rect.attrs({
   height: SVG_FULL_SIZE,
   rx: RECT_FULL_RX,
 })`
-  fill: ${({ theme }) => theme.colors.Black};
+  fill: ${({ theme }) => theme.color.Black};
 `;
 
 const fillAnimationFrame = keyframes`
@@ -126,7 +126,7 @@ export const Circle = styled.circle.attrs({
 })<PathProps>`
 	fill: none;
 	stroke: ${({ increase, theme }) =>
-    increase ? theme.colors.P2 : theme.colors.N4};
+    increase ? theme.color.P2 : theme.color.N4};
 	${({ increase }) =>
     increase
       ? `stroke-dasharray: ${CIRCLE_STROKE_DASHARRAY};`

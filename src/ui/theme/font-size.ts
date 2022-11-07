@@ -36,22 +36,10 @@ export const getThemeFontSize = ({
 }: DRIThemeFontSizeProps & {
   theme: DefaultTheme;
 }) => {
-  const { fs0, fs1, fs2, fs3, fs4, fs5, fs6 } = props;
-  switch (true) {
-    case fs0:
-      return theme.fontSize.fs0;
-    case fs1:
-      return theme.fontSize.fs1;
-    case fs2:
-      return theme.fontSize.fs2;
-    case fs3:
-      return theme.fontSize.fs3;
-    case fs4:
-      return theme.fontSize.fs4;
-    case fs5:
-      return theme.fontSize.fs5;
-    case fs6:
-      return theme.fontSize.fs6;
-  }
-  return theme.fontSize.fs3;
+	const key = Object.keys(props).find(
+    (p) => !!props[p as keyof DRIThemeFontSizeProps]
+  );
+  return key
+    ? theme.fontSize[key as keyof DRIThemeFontSizeProps]
+    : theme.fontSize.fs3;
 };

@@ -1,9 +1,13 @@
-import { MouseEventHandler, ReactNode } from 'react';
+import { memo, MouseEventHandler, ReactNode } from 'react';
 import { DRIThemeFontSizeProps } from 'ui/theme/font-size';
 import { DRIThemeSpaceProps } from 'ui/theme/space';
+import { DRIThemeType } from 'ui/theme/theme';
 import * as S from './Button.style';
 
-export interface ButtonProps extends DRIThemeSpaceProps, DRIThemeFontSizeProps {
+export interface ButtonProps
+  extends DRIThemeSpaceProps,
+    DRIThemeFontSizeProps,
+    DRIThemeType {
   children?: ReactNode;
   dataTestId?: string;
   clickable?: boolean;
@@ -17,7 +21,7 @@ export interface ButtonProps extends DRIThemeSpaceProps, DRIThemeFontSizeProps {
   type?: 'submit' | 'reset' | 'button';
 }
 
-export const Button = ({
+const ButtonBase = memo(({
   children,
   dataTestId = 'button-atom',
   clickable = true,
@@ -43,7 +47,8 @@ export const Button = ({
       {children}
     </S.Button>
   );
-};
+});
 
+export const Button = (props: ButtonProps) => <ButtonBase {...props} />;
 Button.Outlined = (props: ButtonProps) => <Button {...props} outlined />;
 Button.Rounded = (props: ButtonProps) => <Button {...props} rounded />;

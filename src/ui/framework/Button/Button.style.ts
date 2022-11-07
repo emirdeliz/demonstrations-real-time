@@ -4,9 +4,9 @@ import { getThemeSpaceOnlyAsPadding } from 'ui/theme/space';
 import { ButtonProps } from './Button';
 
 const getButtonSize = (props: ButtonProps, theme: DefaultTheme) => {
-  const fontSizeResult = getThemeFontSize({ ...props, theme });
-  const spaceResult = getThemeSpaceOnlyAsPadding({ ...props, theme });
-  return { fontSize: fontSizeResult, space: spaceResult };
+  const fontSize = getThemeFontSize({ ...props, theme });
+  const space = getThemeSpaceOnlyAsPadding({ ...props, theme });
+  return { fontSize, space };
 };
 
 export const Button = styled.button<ButtonProps>`

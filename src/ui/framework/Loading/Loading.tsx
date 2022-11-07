@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { ThemeConsumer } from 'styled-components';
-import { Overlay } from '..';
+import { Overlay } from '../Overlay/Overlay';
 import {
   Context as LoadingContext,
   Provider as LoadingProvider,
@@ -14,7 +14,7 @@ export interface LoadingProps {
   global?: boolean;
 }
 
-export const Loading = ({ circle, global, center }: LoadingProps) => {
+export const LoadingBase = memo(({ circle, global, center }: LoadingProps) => {
   const { hasLoadingActive } = useLoading();
   return (
     <S.Container center={center || global}>
@@ -27,7 +27,7 @@ export const Loading = ({ circle, global, center }: LoadingProps) => {
       {global && hasLoadingActive && (
         <>
           <ThemeConsumer>
-            {(theme) => <Overlay visible zIndex={theme.zIndex.Nm} />}
+            {(theme) => <Overlay visible zIndex={theme.zIndex.ZI1} />}
           </ThemeConsumer>
           <S.Blink>
             <S.SvgFull>
@@ -39,10 +39,10 @@ export const Loading = ({ circle, global, center }: LoadingProps) => {
       )}
     </S.Container>
   );
-};
+});
 
+export const Loading = (props: LoadingProps) => <LoadingBase {...props} />;
 Loading.Global = (props: LoadingProps) => <Loading {...props} global />;
-
 Loading.Circle = (props: LoadingProps) => <Loading {...props} circle />;
 
 export { LoadingContext, LoadingProvider, useLoading };
