@@ -2,48 +2,48 @@ import { centerAbsolute, fullAbsolute } from 'framework/ui/system/theme';
 import styled, { css, keyframes } from 'styled-components';
 
 interface PathProps {
-	increase?: boolean;
+  increase?: boolean;
 }
 
 interface ContainerProps {
-	center?: boolean;
+  center?: boolean;
 }
 
 export const Container = styled.div<ContainerProps>`
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	z-index: ${({ theme }) => theme.zIndex.Nm};
-	${({ center }) => center ? centerAbsolute : ''};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: ${({ theme }) => theme.zIndex.Nm};
+  ${({ center }) => (center ? centerAbsolute : '')};
 `;
 
 const SVG_CIRCLE_SIZE = '50px';
 
 export const SvgCircle = styled.svg.attrs({
-	viewBox: '0 0 100 100',
-  xmlns: 'http://www.w3.org/2000/svg'
+  viewBox: '0 0 100 100',
+  xmlns: 'http://www.w3.org/2000/svg',
 })`
-	width: ${SVG_CIRCLE_SIZE};
-	height: ${SVG_CIRCLE_SIZE};
-	display:flex;
+  width: ${SVG_CIRCLE_SIZE};
+  height: ${SVG_CIRCLE_SIZE};
+  display: flex;
   align-content: space-around;
   justify-content: center;
-	position: relative;
-	margin: 5px;
+  position: relative;
+  margin: 5px;
 `;
 
 const SVG_FULL_SIZE = '98px';
 
 export const SvgFull = styled.svg.attrs({
-	viewBox: '0 0 98 98',
-	xmlns: 'http://www.w3.org/2000/svg',
-	fill: 'none',
-	width: SVG_FULL_SIZE,
-	height: SVG_FULL_SIZE
+  viewBox: '0 0 98 98',
+  xmlns: 'http://www.w3.org/2000/svg',
+  fill: 'none',
+  width: SVG_FULL_SIZE,
+  height: SVG_FULL_SIZE,
 })``;
 
 export const PathFull = styled.path.attrs({
-	d: `M70.7182 55.7699L64.2374 49.354C64.0424 
+  d: `M70.7182 55.7699L64.2374 49.354C64.0424 
 		49.1395 63.7606 49.0107 63.4571 49.0107C63.1754 
 		49.0107 62.8936 49.1395 62.7202 49.3111L61.1162 
 		50.899L48.9133 62.9797L38.2493 52.4225V40.6852L55.7409 
@@ -61,9 +61,9 @@ export const PathFull = styled.path.attrs({
 		44.6119V36.5868ZM30.403 55.5768V49.397L46.5291 65.3614L43.4079 
 		68.4513L30.403 55.5768ZM48.935 73.923L45.7921 70.8117L63.5005 
 		53.2808L66.6433 56.3922L48.935 73.923Z
-	`
+	`,
 })`
-	fill: ${({ theme }) => theme.colors.White};
+  fill: ${({ theme }) => theme.colors.White};
 `;
 
 const blink = keyframes`
@@ -79,17 +79,17 @@ const blink = keyframes`
 `;
 
 export const Blink = styled.div`
-	animation: ${blink} 5s infinite both;
+  animation: ${blink} 5s infinite both;
 `;
 
 const RECT_FULL_RX = 8;
 
 export const RectFull = styled.rect.attrs({
-	width: SVG_FULL_SIZE,
-	height: SVG_FULL_SIZE,
-	rx: RECT_FULL_RX,
+  width: SVG_FULL_SIZE,
+  height: SVG_FULL_SIZE,
+  rx: RECT_FULL_RX,
 })`
-	fill: ${({ theme }) => theme.colors.Black};
+  fill: ${({ theme }) => theme.colors.Black};
 `;
 
 const fillAnimationFrame = keyframes`
@@ -108,7 +108,10 @@ const fillAnimationFrame = keyframes`
 		stroke-dashoffset: 282.6;
 	}
 `;
-const fillAnimation = () => css`${fillAnimationFrame} 1s cubic-bezier(1,1,1,1) 0s infinite`;
+const fillAnimation = () =>
+  css`
+    ${fillAnimationFrame} 1s cubic-bezier(1,1,1,1) 0s infinite
+  `;
 
 const CIRCLE_CX = 50;
 const CIRCLE_CY = 50;
@@ -117,18 +120,19 @@ const CIRCLE_STROKE_DASHARRAY = 242.6;
 const CIRCLE_STROKE_WIDTH = '12px';
 
 export const Circle = styled.circle.attrs({
-	cx: CIRCLE_CX,
-	cy: CIRCLE_CY,
-	r: CIRCLE_R
+  cx: CIRCLE_CX,
+  cy: CIRCLE_CY,
+  r: CIRCLE_R,
 })<PathProps>`
 	fill: none;
-	stroke: ${({ increase, theme }) => increase ? theme.colors.P2 : theme.colors.N4};
-	${({ increase }) =>  increase ? 
-		`stroke-dasharray: ${CIRCLE_STROKE_DASHARRAY};`: 
-		`stroke-width: ${CIRCLE_STROKE_WIDTH};`
-	}};
+	stroke: ${({ increase, theme }) =>
+    increase ? theme.colors.P2 : theme.colors.N4};
+	${({ increase }) =>
+    increase
+      ? `stroke-dasharray: ${CIRCLE_STROKE_DASHARRAY};`
+      : `stroke-width: ${CIRCLE_STROKE_WIDTH};`}};
 	${fullAbsolute};
-	animation: 	${({ increase }) => increase ? fillAnimation : ''};
+	animation: 	${({ increase }) => (increase ? fillAnimation : '')};
   stroke-width: ${CIRCLE_STROKE_WIDTH};
 
 `;

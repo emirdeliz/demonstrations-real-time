@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components';
 
 export enum DRIThemeSpace {
   Sp0 = '0px',
@@ -21,13 +21,13 @@ export interface DRIThemeSpaceDefinition {
 }
 
 export interface DRIThemeSpaceProps {
-	sp0?: boolean;
-	sp1?: boolean;
-	sp2?: boolean;
-	sp3?: boolean;
-	sp4?: boolean;
-	sp5?: boolean;
-	sp6?: boolean;
+  sp0?: boolean;
+  sp1?: boolean;
+  sp2?: boolean;
+  sp3?: boolean;
+  sp4?: boolean;
+  sp5?: boolean;
+  sp6?: boolean;
 }
 
 export interface DRIThemeSpaceGetProps {
@@ -183,7 +183,7 @@ export const getThemeSpaceOnlyAsPadding = (
   const { spaceLeft, spaceRight, spaceTop, spaceBottom } =
     getThemeSpaceOnly(props);
   return [
-		{ paddingLeft: spaceLeft },
+    { paddingLeft: spaceLeft },
     { paddingRight: spaceRight },
     { paddingTop: spaceTop },
     { paddingBottom: spaceBottom },
@@ -198,9 +198,9 @@ export const getThemeSpaceOnlyAsMargin = (
   const { spaceLeft, spaceRight, spaceTop, spaceBottom } =
     getThemeSpaceOnly(props);
   return [
-  	{ marginLeft: spaceLeft },
+    { marginLeft: spaceLeft },
     { marginRight: spaceRight },
     { marginTop: spaceTop },
     { marginBottom: spaceBottom },
-	];
+  ];
 };

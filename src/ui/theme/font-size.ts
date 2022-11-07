@@ -1,13 +1,13 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components';
 
 export enum DRIThemeFontSize {
-	fs0 = '10px',
-	fs1 = '12px',
-	fs2 = '14px',
-	fs3 = '16px',
-	fs4 = '20px',
-	fs5 = '28px',
-	fs6 = '36px',
+  fs0 = '10px',
+  fs1 = '12px',
+  fs2 = '14px',
+  fs3 = '16px',
+  fs4 = '20px',
+  fs5 = '28px',
+  fs6 = '36px',
 }
 
 export interface DRIThemeFontSizeDefinition {

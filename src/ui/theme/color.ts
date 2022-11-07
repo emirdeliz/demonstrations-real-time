@@ -8,15 +8,15 @@ export interface DRIThemeColorDefinition {
 }
 
 export const DRIColorDark = {
-	colors: {
-		primary: '#111',
-		secondary: '#0070f3',
-	},
+  colors: {
+    primary: '#111',
+    secondary: '#0070f3',
+  },
 } as DRIThemeColorDefinition;
 
 export const DRIColorLight = {
-	colors: {
-		primary: '#111',
-		secondary: '#0070f3',
-	},
+  colors: {
+    primary: '#111',
+    secondary: '#0070f3',
+  },
 } as DRIThemeColorDefinition;

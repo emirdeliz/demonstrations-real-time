@@ -20,16 +20,16 @@ export const useLoading = () => {
 
   const removeLoadingStack = useCallback(
     (loadingId?: string) => {
-       setLoadingIdStack((prevValue) => {
-         if (!loadingId) {
-           const loadingIdStackUpdated = [...prevValue];
-           loadingIdStackUpdated.pop();
-           return loadingIdStackUpdated;
-         }
-         
-         const stackUpdated = prevValue.filter((id) => id !== loadingId);
-         return stackUpdated;
-       });
+      setLoadingIdStack((prevValue) => {
+        if (!loadingId) {
+          const loadingIdStackUpdated = [...prevValue];
+          loadingIdStackUpdated.pop();
+          return loadingIdStackUpdated;
+        }
+
+        const stackUpdated = prevValue.filter((id) => id !== loadingId);
+        return stackUpdated;
+      });
     },
     [setLoadingIdStack]
   );

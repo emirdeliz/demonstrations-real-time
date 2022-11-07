@@ -1,12 +1,12 @@
 import { Title } from 'ui/framework/Title/Title';
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-		<>
-			<Title></Title>
-		</>
+    <>
+      <Title></Title>
+    </>
   );
 }
 

@@ -6,7 +6,7 @@ import { DRIThemeRadiusDefinition } from 'ui/theme/radius';
 import { DRIThemeSpaceDefinition } from 'ui/theme/space';
 
 declare module 'styled-components' {
-	export interface DefaultTheme {
+  export interface DefaultTheme {
     dark: DRIThemeColorDefinition;
     light: DRIThemeColorDefinition;
     fontSize: DRIThemeFontSizeDefinition;

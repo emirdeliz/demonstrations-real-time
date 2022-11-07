@@ -2,7 +2,7 @@ import React from 'react';
 import * as S from './ProgressBar.style';
 
 export interface ProgressBarProps {
-  duration?: number 
+  duration?: number;
 }
 
 export const ProgressBar = (props: ProgressBarProps) => {
