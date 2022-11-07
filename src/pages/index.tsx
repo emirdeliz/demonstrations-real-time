@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function Home() {
   return (
     <>
-      <Title></Title>
+      <Title>AAAA</Title>
     </>
   );
 }

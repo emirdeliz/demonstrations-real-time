@@ -1,6 +1,6 @@
 import React, { memo, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { ZIndex } from 'ui/theme/zIndex';
+import { DRIThemeZIndex } from 'ui/theme/zIndex';
 import * as S from './Overlay.style';
 
 export interface OverlayProps {
@@ -8,7 +8,7 @@ export interface OverlayProps {
   visible?: boolean;
   maxWidth?: string;
   maxHeight?: string;
-  zIndex?: ZIndex;
+  zIndex?: DRIThemeZIndex;
   onClick?: () => void;
 }
 
