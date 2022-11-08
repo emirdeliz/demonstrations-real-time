@@ -1,12 +1,12 @@
-import { Title } from 'framework/Title/Title';
-import Head from 'next/head';
-import Image from 'next/image';
-import { useState } from 'react';
+// import Head from 'next/head';
+// import Image from 'next/image';
+// import { useState } from 'react';
+import { HomePage } from './home/HomePage';
 
 export default function Home() {
   return (
     <>
-      <Title>AAAA</Title>
+      <HomePage />
     </>
   );
 }

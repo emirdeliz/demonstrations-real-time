@@ -1,5 +1,5 @@
-import { DefaultTheme } from "styled-components";
-import { capitalizeFirstLetter } from "utils";
+import { DefaultTheme } from 'styled-components';
+import { capitalizeFirstLetter } from 'utils';
 
 export interface DRIThemeColorDefinition {
   Black: string;
@@ -100,7 +100,11 @@ export const getThemeColor = ({
   theme: DefaultTheme;
 }) => {
   const key = capitalizeFirstLetter(
-    Object.keys(props).find((p) => !!props[p as keyof DRIThemeColorProps])
+    Object.keys(props).find(
+      (p) =>
+        !!props[p as keyof DRIThemeColorProps] &&
+        !!theme.color[p as keyof DRIThemeColorDefinition]
+    )
   ) as keyof DRIThemeColorDefinition;
   return key ? theme.color[key] : theme.color.P1;
 };

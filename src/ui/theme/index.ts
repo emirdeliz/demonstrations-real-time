@@ -11,7 +11,6 @@ import { DRIThemeZIndex } from './zIndex';
 
 export const DRITheme = {
   color: DRIThemeColorDark,
-  space: DRIThemeSpace,
   fontSize: DRIThemeFontSize,
   fontWeight: DRIThemeFontWeight,
   radius: DRIThemeRadius,
@@ -19,10 +18,12 @@ export const DRITheme = {
   lineHeight: DRIThemeLineHeight,
   display: DRIThemeDisplay,
   zIndex: DRIThemeZIndex,
+  margin: DRIThemeSpace,
+  padding: DRIThemeSpace,
+  space: DRIThemeSpace,
 } as DefaultTheme;
 
 export {
-  DRIThemeSpace,
   DRIThemeFontSize,
   DRIThemeFontWeight,
   DRIThemeRadius,
@@ -40,6 +41,7 @@ export * from './line-height';
 export * from './mixins';
 export * from './opacity';
 export * from './radius';
-export * from './space';
 export * from './theme';
 export * from './zIndex';
+export * from './margin';
+export * from './padding';

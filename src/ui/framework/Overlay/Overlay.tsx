@@ -14,9 +14,6 @@ export interface OverlayProps {
 
 export const Overlay = memo(({ children, visible, ...props }: OverlayProps) => {
   return visible
-  ? createPortal(
-      <S.Overlay {...props}>{children}</S.Overlay>,
-      document.body
-    )
-  : null;
+    ? createPortal(<S.Overlay {...props}>{children}</S.Overlay>, document.body)
+    : null;
 });

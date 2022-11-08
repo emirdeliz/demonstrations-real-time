@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components';
 
 export enum DRIThemeLineHeight {
   lh0 = '12px',
@@ -12,7 +12,7 @@ export enum DRIThemeLineHeight {
 
 export interface DRIThemeLineHeightDefinition {
   lh0?: string;
-	lh1?: string;
+  lh1?: string;
   lh2?: string;
   lh3?: string;
   lh4?: string;
@@ -22,7 +22,7 @@ export interface DRIThemeLineHeightDefinition {
 
 export interface DRIThemeLineHeightProps {
   lh0?: boolean;
-	lh1?: boolean;
+  lh1?: boolean;
   lh2?: boolean;
   lh3?: boolean;
   lh4?: boolean;
@@ -31,13 +31,17 @@ export interface DRIThemeLineHeightProps {
 }
 
 export const getThemeLineHeight = ({
-	theme,
-	...props
+  theme,
+  ...props
 }: DRIThemeLineHeightProps & {
   theme: DefaultTheme;
 }) => {
-	const key = Object.keys(props).find(p => !!props[p as keyof DRIThemeLineHeightProps]);
-	return key
+  const key = Object.keys(props).find(
+    (p) =>
+      !!props[p as keyof DRIThemeLineHeightProps] &&
+      !!theme.lineHeight[p as keyof DRIThemeLineHeightProps]
+  );
+  return key
     ? theme.lineHeight[key as keyof DRIThemeLineHeightProps]
     : theme.lineHeight.lh0;
 };

@@ -7,7 +7,7 @@ export enum DRIThemeFontSize {
   fs3 = '16px',
   fs4 = '20px',
   fs5 = '28px',
-  fs6 = '36px',
+  fs6 = '56px',
 }
 
 export interface DRIThemeFontSizeDefinition {
@@ -36,9 +36,12 @@ export const getThemeFontSize = ({
 }: DRIThemeFontSizeProps & {
   theme: DefaultTheme;
 }) => {
-	const key = Object.keys(props).find(
-    (p) => !!props[p as keyof DRIThemeFontSizeProps]
+  const key = Object.keys(props).find(
+    (p) =>
+      !!props[p as keyof DRIThemeFontSizeProps] &&
+      !!theme.fontSize[p as keyof DRIThemeFontSizeProps]
   );
+
   return key
     ? theme.fontSize[key as keyof DRIThemeFontSizeProps]
     : theme.fontSize.fs3;

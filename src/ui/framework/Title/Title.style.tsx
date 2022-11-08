@@ -4,7 +4,7 @@ import {
   getThemeDisplay,
   getThemeFontSize,
   getThemeLineHeight,
-  getThemeSpaceOnlyAsMargin,
+  getThemeMarginOnly,
 } from '@/theme';
 import { TitleProps } from './Title';
 
@@ -20,8 +20,8 @@ export const Title = styled.span<TitleProps>`
     error,
     ...props
   }) => {
-		 const margin = getThemeSpaceOnlyAsMargin({ ...props, theme });
-		return `
+    const margin = getThemeMarginOnly({ ...props, theme });
+    return `
 			vertical-align: middle;
 			font-size: ${getThemeFontSize({ theme, ...props })};
 			text-transform: ${capitalize ? 'capitalize' : uppercase ? 'uppercase' : 'none'};
@@ -31,7 +31,7 @@ export const Title = styled.span<TitleProps>`
 			color: ${error ? theme.color.Red : getThemeColor({ theme, ...props })};
 			margin: ${margin.join(' ')};
 		`;
-	}}
+  }}
   ${({ center, justify }) =>
     center || justify
       ? `

@@ -1,4 +1,6 @@
+import { capitalizeFirstLetter } from '@/utils';
 import { DefaultTheme } from 'styled-components';
+import { KeyValue } from 'types/common';
 
 export enum DRIThemeSpace {
   Sp0 = '0px',
@@ -64,16 +66,37 @@ export interface DRIThemeSpaceGetProps {
   spR6?: boolean;
 }
 
+export const buildSpaceProps = (props: KeyValue) => {
+  const resultProps = Object.keys(props)
+    .filter((key) => {
+      return /mt|mb|ml|mr|pt|pb|pl|pr/.test(key);
+    })
+    .reduce((result, key) => {
+      const value = props[key];
+      if (!value) {
+        return result;
+      }
+
+      const keySuffix = (key.substring(1) || '').toUpperCase();
+      result[`sp${keySuffix}`] = value;
+      return result;
+    }, {} as KeyValue);
+  return resultProps;
+};
+
 export const getThemeSpace = ({
   theme,
-	...props
+  ...props
 }: DRIThemeSpaceProps & {
   theme: DefaultTheme;
 }) => {
-	const key = Object.keys(props).find(
+  const key = Object.keys(props).find(
     (p) => !!props[p as keyof DRIThemeSpaceProps]
   );
-  return key ? theme.space[key as keyof DRIThemeSpaceProps] : theme.space.sp0;
+  const keyTheme = capitalizeFirstLetter(key);
+  return key
+    ? theme.space[keyTheme as keyof DRIThemeSpaceProps]
+    : theme.space.sp0;
 };
 
 export const getThemeSpaceOnly = ({
@@ -112,7 +135,7 @@ export const getThemeSpaceOnly = ({
 }: DRIThemeSpaceGetProps & {
   theme: DefaultTheme;
 }) => {
-  const spaceLeft = getThemeSpace({
+  const left = getThemeSpace({
     sp0: spL0,
     sp1: spL1,
     sp2: spL2,
@@ -122,7 +145,8 @@ export const getThemeSpaceOnly = ({
     sp6: spL6,
     theme,
   });
-  const spaceRight = getThemeSpace({
+
+  const right = getThemeSpace({
     sp0: spR0,
     sp1: spR1,
     sp2: spR2,
@@ -132,7 +156,7 @@ export const getThemeSpaceOnly = ({
     sp6: spR6,
     theme,
   });
-  const spaceTop = getThemeSpace({
+  const top = getThemeSpace({
     sp0: spT0,
     sp1: spT1,
     sp2: spT2,
@@ -142,7 +166,7 @@ export const getThemeSpaceOnly = ({
     sp6: spT6,
     theme,
   });
-  const spaceBottom = getThemeSpace({
+  const bottom = getThemeSpace({
     sp0: spB0,
     sp1: spB1,
     sp2: spB2,
@@ -152,35 +176,5 @@ export const getThemeSpaceOnly = ({
     sp6: spB6,
     theme,
   });
-  return { spaceLeft, spaceRight, spaceTop, spaceBottom };
-};
-
-export const getThemeSpaceOnlyAsPadding = (
-  props: DRIThemeSpaceGetProps & {
-    theme: DefaultTheme;
-  }
-) => {
-  const { spaceLeft, spaceRight, spaceTop, spaceBottom } =
-    getThemeSpaceOnly(props);
-  return [
-    { paddingLeft: spaceLeft },
-    { paddingRight: spaceRight },
-    { paddingTop: spaceTop },
-    { paddingBottom: spaceBottom },
-  ];
-};
-
-export const getThemeSpaceOnlyAsMargin = (
-  props: DRIThemeSpaceGetProps & {
-    theme: DefaultTheme;
-  }
-) => {
-  const { spaceLeft, spaceRight, spaceTop, spaceBottom } =
-    getThemeSpaceOnly(props);
-  return [
-    { marginLeft: spaceLeft },
-    { marginRight: spaceRight },
-    { marginTop: spaceTop },
-    { marginBottom: spaceBottom },
-  ];
+  return { left, right, top, bottom };
 };

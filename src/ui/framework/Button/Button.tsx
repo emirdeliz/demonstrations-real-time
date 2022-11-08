@@ -21,33 +21,35 @@ export interface ButtonProps
   type?: 'submit' | 'reset' | 'button';
 }
 
-const ButtonBase = memo(({
-  children,
-  dataTestId = 'button-atom',
-  clickable = true,
-  onClick,
-  title,
-  type = 'button',
-  ...props
-}: ButtonProps) => {
-  return (
-    <S.Button
-      {...props}
-      title={title}
-      disabled={!clickable}
-      clickable={clickable}
-      data-testid={dataTestId}
-      type={type}
-      onClick={(e) => {
-        if (clickable && onClick) {
-          onClick(e);
-        }
-      }}
-    >
-      {children}
-    </S.Button>
-  );
-});
+const ButtonBase = memo(
+  ({
+    children,
+    dataTestId = 'button-atom',
+    clickable = true,
+    onClick,
+    title,
+    type = 'button',
+    ...props
+  }: ButtonProps) => {
+    return (
+      <S.Button
+        {...props}
+        title={title}
+        disabled={!clickable}
+        clickable={clickable}
+        data-testid={dataTestId}
+        type={type}
+        onClick={(e) => {
+          if (clickable && onClick) {
+            onClick(e);
+          }
+        }}
+      >
+        {children}
+      </S.Button>
+    );
+  }
+);
 
 export const Button = (props: ButtonProps) => <ButtonBase {...props} />;
 Button.Outlined = (props: ButtonProps) => <Button {...props} outlined />;
