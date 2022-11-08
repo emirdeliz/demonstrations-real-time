@@ -1,12 +1,12 @@
 import 'styled-components';
-import { DRIThemeColorDefinition } from 'ui/theme/color';
-import { DRIThemeDisplayDefinition } from 'ui/theme/display';
-import { DRIThemeFontSizeDefinition } from 'ui/theme/font-size';
-import { DRIThemeLineHeightDefinition } from 'ui/theme/lineHeight';
-import { DRIThemeOpacityDefinition } from 'ui/theme/opacity';
-import { DRIThemeRadiusDefinition } from 'ui/theme/radius';
-import { DRIThemeSpaceDefinition } from 'ui/theme/space';
-import { DRIThemeZIndexDefinition } from 'ui/theme/zIndex';
+import { DRIThemeColorDefinition } from 'theme/color';
+import { DRIThemeDisplayDefinition } from 'theme/display';
+import { DRIThemeFontSizeDefinition } from 'theme/font-size';
+import { DRIThemeLineHeightDefinition } from 'theme/lineHeight';
+import { DRIThemeOpacityDefinition } from 'theme/opacity';
+import { DRIThemeRadiusDefinition } from 'theme/radius';
+import { DRIThemeSpaceDefinition } from 'theme/space';
+import { DRIThemeZIndexDefinition } from 'theme/zIndex';
 
 declare module 'styled-components' {
   export interface DefaultTheme {

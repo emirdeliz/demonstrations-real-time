@@ -1,6 +1,5 @@
 import styled, { css, DefaultTheme } from 'styled-components';
-import { getThemeFontSize } from 'ui/theme/font-size';
-import { getThemeSpaceOnlyAsPadding } from 'ui/theme/space';
+import { getThemeFontSize, getThemeSpaceOnlyAsPadding } from '@/theme';
 import { ButtonProps } from './Button';
 
 const getButtonSize = (props: ButtonProps, theme: DefaultTheme) => {

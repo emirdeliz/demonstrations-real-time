@@ -1,9 +1,11 @@
 import styled from 'styled-components';
-import { getThemeColor } from 'ui/theme/color';
-import { getThemeDisplay } from 'ui/theme/display';
-import { getThemeFontSize } from 'ui/theme/font-size';
-import { getThemeLineHeight } from 'ui/theme/lineHeight';
-import { getThemeSpaceOnlyAsMargin } from 'ui/theme/space';
+import {
+  getThemeColor,
+  getThemeDisplay,
+  getThemeFontSize,
+  getThemeLineHeight,
+  getThemeSpaceOnlyAsMargin,
+} from '@/theme';
 import { TitleProps } from './Title';
 
 export const Title = styled.span<TitleProps>`

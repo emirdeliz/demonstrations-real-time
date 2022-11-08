@@ -2,8 +2,8 @@ import type { AppProps } from 'next/app';
 import { Barlow } from '@next/font/google';
 import { useState, useMemo } from 'react';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { LoadingProvider } from 'ui/framework';
-import { DRITheme, DRIThemeColorDark, DRIThemeColorLight } from 'ui/theme';
+import { LoadingProvider } from '@/framework';
+import { DRITheme, DRIThemeColorDark, DRIThemeColorLight } from '@/theme';
 
 const barlow = Barlow({weight: '400'});
 

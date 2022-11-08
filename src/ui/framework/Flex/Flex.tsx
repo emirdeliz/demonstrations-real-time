@@ -1,5 +1,5 @@
 import React, { memo, ReactNode } from 'react';
-import { DRIThemeSpaceProps } from 'ui/theme/space';
+import { DRIThemeSpaceProps } from 'theme/space';
 import * as S from './Flex.style';
 
 export interface FlexProps extends DRIThemeSpaceProps {

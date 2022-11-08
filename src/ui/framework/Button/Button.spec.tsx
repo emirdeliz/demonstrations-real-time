@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react';
-import { DRIThemeColorDark } from 'ui/theme/color';
-import { DRIThemeOpacity } from 'ui/theme/opacity';
-import { DRIThemeSpace } from 'ui/theme/space';
+import { DRIThemeColorDark } from 'theme/color';
+import { DRIThemeOpacity } from 'theme/opacity';
+import { DRIThemeSpace } from 'theme/space';
 import { Button } from './Button';
 
 describe('Button component test', () => {

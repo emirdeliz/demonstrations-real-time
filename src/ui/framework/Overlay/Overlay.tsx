@@ -1,6 +1,6 @@
 import React, { memo, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-import { DRIThemeZIndex } from 'ui/theme/zIndex';
+import { DRIThemeZIndex } from 'theme/zIndex';
 import * as S from './Overlay.style';
 
 export interface OverlayProps {

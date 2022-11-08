@@ -1,11 +1,11 @@
 import React, { memo, ReactNode } from 'react';
 import * as S from './Title.style';
-import { DRIThemeColorProps } from 'ui/theme/color';
-import { DRIThemeFontSizeProps } from 'ui/theme/font-size';
-import { DRIThemeFontWeightProps } from 'ui/theme/font-weight';
-import { DRIThemeSpaceProps } from 'ui/theme/space';
-import { DRIThemeLineHeightProps } from 'ui/theme/lineHeight';
-import { DRIThemeDisplayProps } from 'ui/theme/display';
+import { DRIThemeColorProps } from 'theme/color';
+import { DRIThemeFontSizeProps } from 'theme/font-size';
+import { DRIThemeFontWeightProps } from 'theme/font-weight';
+import { DRIThemeSpaceProps } from 'theme/space';
+import { DRIThemeLineHeightProps } from 'theme/lineHeight';
+import { DRIThemeDisplayProps } from 'theme/display';
 
 export interface TitleProps
   extends DRIThemeColorProps,

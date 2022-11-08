@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
-import { centerAbsolute, fullAbsolute } from 'ui/theme/mixins';
+import { centerAbsolute, fullAbsolute } from '@/theme';
 
 interface PathProps {
   increase?: boolean;

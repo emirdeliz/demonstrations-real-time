@@ -3,7 +3,7 @@ import { DRIThemeColorDark } from './color';
 import { DRIThemeDisplay } from './display';
 import { DRIThemeFontSize } from './font-size';
 import { DRIThemeFontWeight } from './font-weight';
-import { DRIThemeLineHeight } from './lineHeight';
+import { DRIThemeLineHeight } from './line-height';
 import { DRIThemeOpacity } from './opacity';
 import { DRIThemeRadius } from './radius';
 import { DRIThemeSpace } from './space';
@@ -32,4 +32,14 @@ export {
   DRIThemeZIndex,
 };
 
-export { DRIThemeColorDark, DRIThemeColorLight } from './color';
+export * from './color';
+export * from './display';
+export * from './font-size';
+export * from './font-weight';
+export * from './line-height';
+export * from './mixins';
+export * from './opacity';
+export * from './radius';
+export * from './space';
+export * from './theme';
+export * from './zIndex';

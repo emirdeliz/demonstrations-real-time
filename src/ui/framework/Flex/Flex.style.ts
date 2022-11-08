@@ -1,8 +1,5 @@
 import styled from 'styled-components';
-import {
-  getThemeSpaceOnlyAsMargin,
-  getThemeSpaceOnlyAsPadding,
-} from 'ui/theme/space';
+import { getThemeSpaceOnlyAsMargin, getThemeSpaceOnlyAsPadding } from '@/theme';
 import { FlexProps } from './Flex';
 
 const getAlign = (

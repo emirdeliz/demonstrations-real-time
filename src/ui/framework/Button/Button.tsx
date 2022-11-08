@@ -1,7 +1,7 @@
 import { memo, MouseEventHandler, ReactNode } from 'react';
-import { DRIThemeFontSizeProps } from 'ui/theme/font-size';
-import { DRIThemeSpaceProps } from 'ui/theme/space';
-import { DRIThemeType } from 'ui/theme/theme';
+import { DRIThemeFontSizeProps } from 'theme/font-size';
+import { DRIThemeSpaceProps } from 'theme/space';
+import { DRIThemeType } from 'theme/theme';
 import * as S from './Button.style';
 
 export interface ButtonProps
