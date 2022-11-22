@@ -19,6 +19,7 @@
       "@/framework": ["ui/framework"],
       "@/components": ["ui/components"],
       "@/theme": ["ui/theme"],
+			"@/i18n": ["ui/i18n"],
 			"@/hooks": ["hooks"],
       "@/utils": ["utils"]
     }

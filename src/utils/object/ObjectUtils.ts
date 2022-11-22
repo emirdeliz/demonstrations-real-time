@@ -11,3 +11,7 @@ export const convertObjectValuesToObjectValuesAsBoolean = <T>(
   }, {} as T);
   return valuesAsBoolean as T;
 };
+
+export const isNullOrUndefined = (value: GenericObject) => {
+  return value === null || value === undefined;
+};

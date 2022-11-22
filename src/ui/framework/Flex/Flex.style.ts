@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getThemeSpaceOnlyAsMargin, getThemeSpaceOnlyAsPadding } from '@/theme';
+import { getThemePaddingOnly, getThemeMarginOnly } from '@/theme';
 import { FlexProps } from './Flex';
 
 const getAlign = (
@@ -65,8 +65,8 @@ export const Container = styled.div<FlexProps & { flexWrap: number }>`
     );
   }};
   ${(props) => {
-    const margin = getThemeSpaceOnlyAsMargin(props);
-    const padding = getThemeSpaceOnlyAsPadding(props);
+    const margin = getThemeMarginOnly(props);
+    const padding = getThemePaddingOnly(props);
     return `
 			${margin && margin.length ? `margin: ${margin.join(' ')}` : ''}
 			${padding && padding.length ? `padding: ${padding.join(' ')}` : ''}

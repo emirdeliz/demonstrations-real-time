@@ -1,8 +1,8 @@
 import React, { memo, ReactNode } from 'react';
-import { DRIThemeSpaceProps } from 'theme/space';
+import { DRIThemeMarginProps, DRIThemeDisplayProps } from '@/theme';
 import * as S from './Flex.style';
 
-export interface FlexProps extends DRIThemeSpaceProps {
+export interface FlexProps extends DRIThemeMarginProps, DRIThemeDisplayProps {
   children: ReactNode;
   justifyStart?: boolean;
   justifyEnd?: boolean;

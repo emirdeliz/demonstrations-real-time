@@ -1,13 +1,17 @@
 import { Banner } from '@/components';
-import { Title } from '@/framework';
+import { Flex, Input, Title } from '@/framework';
+import { t } from '@/i18n';
 
 export const HomePage = () => {
   return (
     <>
       <Banner />
       <Title.Fs6 fw3 center mt5>
-        Manifestações ao vivo pelo Brasil
+        {t('home-page-demonstration-title-main')}
       </Title.Fs6>
+      <Flex mt5 mb5>
+        <Input placeholder={t('home-page-find-city-input-placeholder')} />
+      </Flex>
     </>
   );
 };
