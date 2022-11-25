@@ -1,8 +1,15 @@
 import React, { memo, ReactNode } from 'react';
-import { DRIThemeMarginProps, DRIThemeDisplayProps } from '@/theme';
+import {
+  DRIThemeMarginProps,
+  DRIThemeDisplayProps,
+  DRIThemePaddingProps,
+} from '@/theme';
 import * as S from './Flex.style';
 
-export interface FlexProps extends DRIThemeMarginProps, DRIThemeDisplayProps {
+export interface FlexProps
+  extends DRIThemePaddingProps,
+    DRIThemeMarginProps,
+    DRIThemeDisplayProps {
   children: ReactNode;
   justifyStart?: boolean;
   justifyEnd?: boolean;

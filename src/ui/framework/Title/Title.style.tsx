@@ -24,8 +24,8 @@ export const Title = styled.span<TitleProps>`
     return `
 			vertical-align: middle;
 			font-size: ${getThemeFontSize({ theme, ...props })};
-			text-transform: ${capitalize ? 'capitalize' : uppercase ? 'uppercase' : 'none'};
 			font-weight: ${semibold ? theme.fontWeight.Semibold : 'normal'};
+			text-transform: ${capitalize ? 'capitalize' : uppercase ? 'uppercase' : 'none'};
 			cursor: ${cursorPointer ? 'pointer' : 'auto'};
 			white-space: ${noWrap ? 'nowrap' : 'initial'};
 			color: ${error ? theme.color.Red : getThemeColor({ theme, ...props })};

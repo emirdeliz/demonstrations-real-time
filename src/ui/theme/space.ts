@@ -13,13 +13,13 @@ export enum DRIThemeSpace {
 }
 
 export interface DRIThemeSpaceDefinition {
-  sp0?: string;
-  sp1?: string;
-  sp2?: string;
-  sp3?: string;
-  sp4?: string;
-  sp5?: string;
-  sp6?: string;
+  Sp0?: string;
+  Sp1?: string;
+  Sp2?: string;
+  Sp3?: string;
+  Sp4?: string;
+  Sp5?: string;
+  Sp6?: string;
 }
 
 export interface DRIThemeSpaceProps {

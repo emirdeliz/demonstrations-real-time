@@ -1,13 +1,13 @@
 import { DefaultTheme } from 'styled-components';
 
 export enum DRIThemeLineHeight {
-  lh0 = '12px',
-  lh1 = '16px',
-  lh2 = '20px',
-  lh3 = '24px',
-  lh4 = '32px',
-  lh5 = '40px',
-  lh6 = '48px',
+  Lh0 = '12px',
+  Lh1 = '16px',
+  Lh2 = '20px',
+  Lh3 = '24px',
+  Lh4 = '32px',
+  Lh5 = '40px',
+  Lh6 = '48px',
 }
 
 export interface DRIThemeLineHeightDefinition {

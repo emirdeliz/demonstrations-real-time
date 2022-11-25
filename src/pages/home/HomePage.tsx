@@ -9,8 +9,10 @@ export const HomePage = () => {
       <Title.Fs6 fw3 center mt5>
         {t('home-page-demonstration-title-main')}
       </Title.Fs6>
-      <Flex mt5 mb5>
-        <Input placeholder={t('home-page-find-city-input-placeholder')} />
+      <Flex pl5 pr5>
+        <Input
+          placeholder={t('home-page-find-city-or-state-input-placeholder')}
+        />
       </Flex>
     </>
   );

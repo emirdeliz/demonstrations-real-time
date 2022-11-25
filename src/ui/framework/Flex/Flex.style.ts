@@ -68,8 +68,8 @@ export const Container = styled.div<FlexProps & { flexWrap: number }>`
     const margin = getThemeMarginOnly(props);
     const padding = getThemePaddingOnly(props);
     return `
-			${margin && margin.length ? `margin: ${margin.join(' ')}` : ''}
-			${padding && padding.length ? `padding: ${padding.join(' ')}` : ''}
+			${margin && margin.length ? `margin: ${margin.join(' ')};` : ''}
+			${padding && padding.length ? `padding: ${padding.join(' ')};` : ''}
 		`;
   }}
   ${({ hFull, wFull }) => `

@@ -1,13 +1,14 @@
+import { capitalizeFirstLetter } from '@/utils';
 import { DefaultTheme } from 'styled-components';
 
 export enum DRIThemeFontSize {
-  fs0 = '10px',
-  fs1 = '12px',
-  fs2 = '14px',
-  fs3 = '16px',
-  fs4 = '20px',
-  fs5 = '28px',
-  fs6 = '56px',
+  Fs0 = '10px',
+  Fs1 = '12px',
+  Fs2 = '14px',
+  Fs3 = '16px',
+  Fs4 = '20px',
+  Fs5 = '28px',
+  Fs6 = '56px',
 }
 
 export interface DRIThemeFontSizeDefinition {
@@ -36,13 +37,16 @@ export const getThemeFontSize = ({
 }: DRIThemeFontSizeProps & {
   theme: DefaultTheme;
 }) => {
-  const key = Object.keys(props).find(
-    (p) =>
+  const key = Object.keys(props).find((p) => {
+    const pCapitalize = capitalizeFirstLetter(p);
+    return (
       !!props[p as keyof DRIThemeFontSizeProps] &&
-      !!theme.fontSize[p as keyof DRIThemeFontSizeProps]
-  );
+      !!theme.fontSize[pCapitalize as keyof DRIThemeFontSizeProps]
+    );
+  });
 
+  const keyCapitalize = capitalizeFirstLetter(key);
   return key
-    ? theme.fontSize[key as keyof DRIThemeFontSizeProps]
-    : theme.fontSize.fs3;
+    ? theme.fontSize[keyCapitalize as keyof DRIThemeFontSizeProps]
+    : theme.fontSize.Fs3;
 };

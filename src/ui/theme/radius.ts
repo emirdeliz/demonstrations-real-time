@@ -1,9 +1,9 @@
 export enum DRIThemeRadius {
-  rd0 = '3px',
-  rd1 = '5px',
-  rd2 = '15px',
-  rd3 = '30px',
-  rd4 = '50%',
+  Rd0 = '3px',
+  Rd1 = '5px',
+  Rd2 = '15px',
+  Rd3 = '30px',
+  Rd4 = '50%',
 }
 
 export interface DRIThemeRadiusDefinition {
