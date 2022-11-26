@@ -1,4 +1,5 @@
 export * from './Button/Button';
+export * from './Col/Col';
 export * from './Flex/Flex';
 export * from './FormControl/FormControl';
 export * from './FormGroup/FormGroup';
@@ -7,4 +8,5 @@ export * from './InputForm/InputForm';
 export * from './LabelForm/LabelForm';
 export * from './Loading/Loading';
 export * from './ProgressBar/ProgressBar';
+export * from './Row/Row';
 export * from './Title/Title';

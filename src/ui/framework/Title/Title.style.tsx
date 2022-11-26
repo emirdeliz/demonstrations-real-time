@@ -29,7 +29,7 @@ export const Title = styled.span<TitleProps>`
 			cursor: ${cursorPointer ? 'pointer' : 'auto'};
 			white-space: ${noWrap ? 'nowrap' : 'initial'};
 			color: ${error ? theme.color.Red : getThemeColor({ theme, ...props })};
-			margin: ${margin.join(' ')};
+			${margin};
 		`;
   }}
   ${({ center, justify }) =>

@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
-import { Barlow } from '@next/font/google';
 import { useState, useMemo } from 'react';
+import { Reset } from 'styled-reset';
+import { Barlow } from '@next/font/google';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { LoadingProvider } from '@/framework';
 import { DRITheme, DRIThemeColorDark, DRIThemeColorLight } from '@/theme';
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Reset />
       <main className={barlow.className}>
         <ThemeProvider theme={theme}>
           <LoadingProvider>

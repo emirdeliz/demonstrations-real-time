@@ -51,5 +51,10 @@ export const getThemePaddingOnly = (
     theme: props.theme,
     ...spaceProps,
   });
-  return [left, right, top, bottom];
+  return `
+		${top ? `padding-top: ${top};` : ''}
+		${bottom ? `padding-bottom: ${bottom};` : ''}
+		${left ? `padding-left: ${left};` : ''}
+		${right ? `padding-right: ${right};` : ''}
+	`;
 };

@@ -51,5 +51,10 @@ export const getThemeMarginOnly = (
     theme: props.theme,
     ...spaceProps,
   });
-  return [left, right, top, bottom];
+  return `
+		${top ? `margin-top: ${top};` : ''}
+		${bottom ? `margin-bottom: ${bottom};` : ''}
+		${left ? `margin-left: ${left};` : ''}
+		${right ? `margin-right: ${right};` : ''}
+	`;
 };
