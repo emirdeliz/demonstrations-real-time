@@ -18,7 +18,7 @@ export interface DRIThemeDisplayDefinition {
 
 export interface DRIThemeDisplayProps {
   block?: boolean;
-  inlineBlock?: boolean;
+  'inline-block'?: boolean;
   inline?: boolean;
   flex?: boolean;
   initial?: boolean;
@@ -26,7 +26,7 @@ export interface DRIThemeDisplayProps {
 
 export const getThemeDisplay = ({
   block,
-  inlineBlock,
+  'inline-block': inlineBlock,
   inline,
   flex,
   initial,

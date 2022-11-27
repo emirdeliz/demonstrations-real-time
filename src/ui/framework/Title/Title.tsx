@@ -21,8 +21,8 @@ export interface TitleProps
   semibold?: boolean;
   uppercase?: boolean;
   error?: boolean;
-  cursorPointer?: boolean;
-  noWrap?: boolean;
+  'cursor-pointer'?: boolean;
+  'no-wrap'?: boolean;
   ellipsis?: boolean;
   center?: boolean;
   justify?: boolean;
@@ -34,10 +34,10 @@ const TitleBase = memo((props: TitleProps) => {
 });
 
 export const Title = (props: TitleProps) => <TitleBase {...props} />;
-Title.Fs0 = (props: TitleProps) => <Title {...props} fs0 />;
-Title.Fs1 = (props: TitleProps) => <Title {...props} fs1 />;
-Title.Fs2 = (props: TitleProps) => <Title {...props} fs2 />;
-Title.Fs3 = (props: TitleProps) => <Title {...props} fs3 />;
-Title.Fs4 = (props: TitleProps) => <Title {...props} fs4 />;
-Title.Fs5 = (props: TitleProps) => <Title {...props} fs5 />;
-Title.Fs6 = (props: TitleProps) => <Title {...props} fs6 />;
+Title.Fs0 = (props: TitleProps) => <Title {...props} fs-0 />;
+Title.Fs1 = (props: TitleProps) => <Title {...props} fs-1 />;
+Title.Fs2 = (props: TitleProps) => <Title {...props} fs-2 />;
+Title.Fs3 = (props: TitleProps) => <Title {...props} fs-3 />;
+Title.Fs4 = (props: TitleProps) => <Title {...props} fs-4 />;
+Title.Fs5 = (props: TitleProps) => <Title {...props} fs-5 />;
+Title.Fs6 = (props: TitleProps) => <Title {...props} fs-6 />;

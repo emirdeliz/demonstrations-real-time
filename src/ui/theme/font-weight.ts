@@ -11,12 +11,16 @@ export interface DRIThemeFontWeightDefinition {
 }
 
 export interface DRIThemeFontWeightProps {
-  fw1?: boolean;
-  fw2?: boolean;
-  fw3?: boolean;
+  'fw-1'?: boolean;
+  'fw-2'?: boolean;
+  'fw-3'?: boolean;
 }
 
-export const getFontWeight = ({ fw1, fw2, fw3 }: DRIThemeFontWeightProps) => {
+export const getFontWeight = ({
+  'fw-1': fw1,
+  'fw-2': fw2,
+  'fw-3': fw3,
+}: DRIThemeFontWeightProps) => {
   switch (true) {
     case fw1:
       return DRIThemeFontWeight.Regular;

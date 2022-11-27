@@ -33,11 +33,11 @@ export const Container = styled.div<FlexProps & { flexWrap: number }>`
   flex-wrap: ${({ flexWrap }) => (flexWrap ? 'wrap' : 'inherit')};
   flex-direction: ${({ row }) => (row ? 'row' : 'column')};
   justify-content: ${({
-    justifyCenter,
-    justifyEnd,
-    justifySpaceBetween,
-    justifySpaceAround,
-    justifyInitial,
+    'justify-center': justifyCenter,
+    'justify-end': justifyEnd,
+    'justify-space-between': justifySpaceBetween,
+    'justify-space-around': justifySpaceAround,
+    'justify-initial': justifyInitial,
   }) => {
     return getAlign(
       justifyCenter,
@@ -48,12 +48,12 @@ export const Container = styled.div<FlexProps & { flexWrap: number }>`
     );
   }};
   align-items: ${({
-    alignCenter,
-    alignEnd,
-    alignSpaceBetween,
-    alignSpaceAround,
-    alignBaseline,
-    alignInitial,
+    'align-center': alignCenter,
+    'align-end': alignEnd,
+    'align-space-between': alignSpaceBetween,
+    'align-space-around': alignSpaceAround,
+    'align-baseline': alignBaseline,
+    'align-initial': alignInitial,
   }) => {
     return getAlign(
       alignCenter,
@@ -72,7 +72,7 @@ export const Container = styled.div<FlexProps & { flexWrap: number }>`
 			${padding}
 		`;
   }}
-  ${({ hFull, wFull }) => `
+  ${({ 'h-full': hFull, 'w-full': wFull }) => `
 		${wFull ? 'width: 100%' : ''};
 		${hFull ? 'height: 100%' : ''};
 	`}

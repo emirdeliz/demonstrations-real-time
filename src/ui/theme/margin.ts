@@ -8,37 +8,37 @@ import {
 export interface DRIThemeMarginDefinition extends DRIThemeSpaceDefinition {}
 
 export interface DRIThemeMarginProps {
-  mt0?: boolean;
-  mt1?: boolean;
-  mt2?: boolean;
-  mt3?: boolean;
-  mt4?: boolean;
-  mt5?: boolean;
-  mt6?: boolean;
+  'mt-0'?: boolean;
+  'mt-1'?: boolean;
+  'mt-2'?: boolean;
+  'mt-3'?: boolean;
+  'mt-4'?: boolean;
+  'mt-5'?: boolean;
+  'mt-6'?: boolean;
 
-  mb0?: boolean;
-  mb1?: boolean;
-  mb2?: boolean;
-  mb3?: boolean;
-  mb4?: boolean;
-  mb5?: boolean;
-  mb6?: boolean;
+  'mb-0'?: boolean;
+  'mb-1'?: boolean;
+  'mb-2'?: boolean;
+  'mb-3'?: boolean;
+  'mb-4'?: boolean;
+  'mb-5'?: boolean;
+  'mb-6'?: boolean;
 
-  ml0?: boolean;
-  ml1?: boolean;
-  ml2?: boolean;
-  ml3?: boolean;
-  ml4?: boolean;
-  ml5?: boolean;
-  ml6?: boolean;
+  'ml-0'?: boolean;
+  'ml-1'?: boolean;
+  'ml-2'?: boolean;
+  'ml-3'?: boolean;
+  'ml-4'?: boolean;
+  'ml-5'?: boolean;
+  'ml-6'?: boolean;
 
-  mr0?: boolean;
-  mr1?: boolean;
-  mr2?: boolean;
-  mr3?: boolean;
-  mr4?: boolean;
-  mr5?: boolean;
-  mr6?: boolean;
+  'mr-0'?: boolean;
+  'mr-1'?: boolean;
+  'mr-2'?: boolean;
+  'mr-3'?: boolean;
+  'mr-4'?: boolean;
+  'mr-5'?: boolean;
+  'mr-6'?: boolean;
 }
 
 export const getThemeMarginOnly = (
@@ -46,7 +46,7 @@ export const getThemeMarginOnly = (
     theme: DefaultTheme;
   }
 ) => {
-  const spaceProps = buildSpaceProps(props);
+  const spaceProps = buildSpaceProps(props, 'm');
   const { left, right, top, bottom } = getThemeSpaceOnly({
     theme: props.theme,
     ...spaceProps,

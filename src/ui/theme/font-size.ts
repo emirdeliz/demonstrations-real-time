@@ -2,33 +2,33 @@ import { capitalizeFirstLetter } from '@/utils';
 import { DefaultTheme } from 'styled-components';
 
 export enum DRIThemeFontSize {
-  Fs0 = '10px',
-  Fs1 = '12px',
-  Fs2 = '14px',
-  Fs3 = '16px',
-  Fs4 = '20px',
-  Fs5 = '28px',
-  Fs6 = '56px',
+  'Fs-0' = '10px',
+  'Fs-1' = '12px',
+  'Fs-2' = '14px',
+  'Fs-3' = '16px',
+  'Fs-4' = '20px',
+  'Fs-5' = '28px',
+  'Fs-6' = '56px',
 }
 
 export interface DRIThemeFontSizeDefinition {
-  fs0?: string;
-  fs1?: string;
-  fs2?: string;
-  fs3?: string;
-  fs4?: string;
-  fs5?: string;
-  fs6?: string;
+  'fs-0'?: string;
+  'fs-1'?: string;
+  'fs-2'?: string;
+  'fs-3'?: string;
+  'fs-4'?: string;
+  'fs-5'?: string;
+  'fs-6'?: string;
 }
 
 export interface DRIThemeFontSizeProps {
-  fs0?: boolean;
-  fs1?: boolean;
-  fs2?: boolean;
-  fs3?: boolean;
-  fs4?: boolean;
-  fs5?: boolean;
-  fs6?: boolean;
+  'fs-0'?: boolean;
+  'fs-1'?: boolean;
+  'fs-2'?: boolean;
+  'fs-3'?: boolean;
+  'fs-4'?: boolean;
+  'fs-5'?: boolean;
+  'fs-6'?: boolean;
 }
 
 export const getThemeFontSize = ({

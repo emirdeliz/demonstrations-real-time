@@ -1,14 +1,15 @@
-import type { AppProps } from 'next/app';
 import { useState, useMemo } from 'react';
-import { Reset } from 'styled-reset';
+import type { AppProps } from 'next/app';
 import { Barlow } from '@next/font/google';
+import { Reset } from 'styled-reset';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
 import { LoadingProvider } from '@/framework';
 import { DRITheme, DRIThemeColorDark, DRIThemeColorLight } from '@/theme';
+import * as S from './global.style';
 
 const barlow = Barlow({ weight: '400' });
 
-export default function App({ Component, pageProps }: AppProps) {
+const App = ({ Component, pageProps }: AppProps) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
   const themeToggler = () => {
     setIsDarkMode(!isDarkMode);
@@ -24,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Reset />
+      <S.Global />
       <main className={barlow.className}>
         <ThemeProvider theme={theme}>
           <LoadingProvider>
@@ -33,4 +35,6 @@ export default function App({ Component, pageProps }: AppProps) {
       </main>
     </>
   );
-}
+};
+
+export default App;

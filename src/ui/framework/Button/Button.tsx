@@ -1,21 +1,25 @@
+import {
+  DRIThemeFontSizeProps,
+  DRIThemeMarginProps,
+  DRIThemePaddingProps,
+  DRIThemeType,
+} from '@/theme';
 import { memo, MouseEventHandler, ReactNode } from 'react';
-import { DRIThemeFontSizeProps } from 'theme/font-size';
-import { DRIThemeSpaceProps } from 'theme/space';
-import { DRIThemeType } from 'theme/theme';
 import * as S from './Button.style';
 
 export interface ButtonProps
-  extends DRIThemeSpaceProps,
+  extends DRIThemePaddingProps,
+    DRIThemeMarginProps,
     DRIThemeFontSizeProps,
     DRIThemeType {
   children?: ReactNode;
-  dataTestId?: string;
+  'data-test-id'?: string;
   clickable?: boolean;
   rounded?: boolean;
   outlined?: boolean;
-  wFull?: boolean;
+  'w-full'?: boolean;
   link?: boolean;
-  maxWidth?: string;
+  'max-width'?: string;
   title?: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   type?: 'submit' | 'reset' | 'button';
@@ -24,7 +28,7 @@ export interface ButtonProps
 const ButtonBase = memo(
   ({
     children,
-    dataTestId = 'button-atom',
+    'data-test-id': dataTestId = 'button-atom',
     clickable = true,
     onClick,
     title,

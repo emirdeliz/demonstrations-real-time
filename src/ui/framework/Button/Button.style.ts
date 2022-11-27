@@ -9,7 +9,14 @@ const getButtonSize = (props: ButtonProps, theme: DefaultTheme) => {
 };
 
 export const Button = styled.button<ButtonProps>`
-  ${({ theme, rounded, clickable, maxWidth, wFull, ...props }) => {
+  ${({
+    theme,
+    rounded,
+    clickable,
+    'max-width': maxWidth,
+    'w-full': wFull,
+    ...props
+  }) => {
     const { fontSize, space } = getButtonSize(props, theme);
     return css`
       width: 100%;

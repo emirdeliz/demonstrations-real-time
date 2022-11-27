@@ -14,8 +14,8 @@ export const Title = styled.span<TitleProps>`
     uppercase,
     semibold,
     ellipsis,
-    cursorPointer,
-    noWrap,
+    'cursor-pointer': cursorPointer,
+    'no-wrap': noWrap,
     theme,
     error,
     ...props

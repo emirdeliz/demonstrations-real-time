@@ -3,73 +3,76 @@ import { DefaultTheme } from 'styled-components';
 import { KeyValue } from 'types/common';
 
 export enum DRIThemeSpace {
-  Sp0 = '0px',
-  Sp1 = '4px',
-  Sp2 = '8px',
-  Sp3 = '16px',
-  Sp4 = '24px',
-  Sp5 = '32px',
-  Sp6 = '44px',
+  'Sp-0' = '0px',
+  'Sp-1' = '4px',
+  'Sp-2' = '8px',
+  'Sp-3' = '16px',
+  'Sp-4' = '24px',
+  'Sp-5' = '32px',
+  'Sp-6' = '44px',
 }
 
 export interface DRIThemeSpaceDefinition {
-  Sp0?: string;
-  Sp1?: string;
-  Sp2?: string;
-  Sp3?: string;
-  Sp4?: string;
-  Sp5?: string;
-  Sp6?: string;
+  'Sp-0'?: string;
+  'Sp-1'?: string;
+  'Sp-2'?: string;
+  'Sp-3'?: string;
+  'Sp-4'?: string;
+  'Sp-5'?: string;
+  'Sp-6'?: string;
 }
 
 export interface DRIThemeSpaceProps {
-  sp0?: boolean;
-  sp1?: boolean;
-  sp2?: boolean;
-  sp3?: boolean;
-  sp4?: boolean;
-  sp5?: boolean;
-  sp6?: boolean;
+  'sp-0'?: boolean;
+  'sp-1'?: boolean;
+  'sp-2'?: boolean;
+  'sp-3'?: boolean;
+  'sp-4'?: boolean;
+  'sp-5'?: boolean;
+  'sp-6'?: boolean;
 }
 
 export interface DRIThemeSpaceGetProps {
-  spT0?: boolean;
-  spT1?: boolean;
-  spT2?: boolean;
-  spT3?: boolean;
-  spT4?: boolean;
-  spT5?: boolean;
-  spT6?: boolean;
+  'sp-t-0'?: boolean;
+  'sp-t-1'?: boolean;
+  'sp-t-2'?: boolean;
+  'sp-t-3'?: boolean;
+  'sp-t-4'?: boolean;
+  'sp-t-5'?: boolean;
+  'sp-t-6'?: boolean;
 
-  spB0?: boolean;
-  spB1?: boolean;
-  spB2?: boolean;
-  spB3?: boolean;
-  spB4?: boolean;
-  spB5?: boolean;
-  spB6?: boolean;
+  'sp-b-0'?: boolean;
+  'sp-b-1'?: boolean;
+  'sp-b-2'?: boolean;
+  'sp-b-3'?: boolean;
+  'sp-b-4'?: boolean;
+  'sp-b-5'?: boolean;
+  'sp-b-6'?: boolean;
 
-  spL0?: boolean;
-  spL1?: boolean;
-  spL2?: boolean;
-  spL3?: boolean;
-  spL4?: boolean;
-  spL5?: boolean;
-  spL6?: boolean;
+  'sp-l-0'?: boolean;
+  'sp-l-1'?: boolean;
+  'sp-l-2'?: boolean;
+  'sp-l-3'?: boolean;
+  'sp-l-4'?: boolean;
+  'sp-l-5'?: boolean;
+  'sp-l-6'?: boolean;
 
-  spR0?: boolean;
-  spR1?: boolean;
-  spR2?: boolean;
-  spR3?: boolean;
-  spR4?: boolean;
-  spR5?: boolean;
-  spR6?: boolean;
+  'sp-r-0'?: boolean;
+  'sp-r-1'?: boolean;
+  'sp-r-2'?: boolean;
+  'sp-r-3'?: boolean;
+  'sp-r-4'?: boolean;
+  'sp-r-5'?: boolean;
+  'sp-r-6'?: boolean;
 }
 
-export const buildSpaceProps = (props: KeyValue) => {
+export const buildSpaceProps = (props: KeyValue, spacePrefix: 'p' | 'm') => {
   const resultProps = Object.keys(props)
     .filter((key) => {
-      return /mt|mb|ml|mr|pt|pb|pl|pr/.test(key);
+      return new RegExp(
+        `${spacePrefix}t|${spacePrefix}b|${spacePrefix}l|${spacePrefix}r`,
+        'g'
+      ).test(key);
     })
     .reduce((result, key) => {
       const value = props[key];
@@ -78,7 +81,7 @@ export const buildSpaceProps = (props: KeyValue) => {
       }
 
       const keySuffix = (key.substring(1) || '').toUpperCase();
-      result[`sp${keySuffix}`] = value;
+      result[`'sp-${keySuffix}`] = value;
       return result;
     }, {} as KeyValue);
   return resultProps;
@@ -92,88 +95,57 @@ export const getThemeSpace = ({
 }) => {
   const key = Object.keys(props).find(
     (p) => !!props[p as keyof DRIThemeSpaceProps]
-  );
-  const keyTheme = capitalizeFirstLetter(key);
-  return key
-    ? theme.space[keyTheme as keyof DRIThemeSpaceProps]
-    : theme.space.sp0;
+  ) as keyof DRIThemeSpaceProps;
+
+  const keyTheme = capitalizeFirstLetter(key) as keyof DRIThemeSpaceDefinition;
+  return key ? theme.space[keyTheme] : undefined;
 };
 
 export const getThemeSpaceOnly = ({
-  spT0,
-  spT1,
-  spT2,
-  spT3,
-  spT4,
-  spT5,
-  spT6,
-
-  spB0,
-  spB1,
-  spB2,
-  spB3,
-  spB4,
-  spB5,
-  spB6,
-
-  spL0,
-  spL1,
-  spL2,
-  spL3,
-  spL4,
-  spL5,
-  spL6,
-
-  spR0,
-  spR1,
-  spR2,
-  spR3,
-  spR4,
-  spR5,
-  spR6,
   theme,
+  ...props
 }: DRIThemeSpaceGetProps & {
   theme: DefaultTheme;
 }) => {
   const left = getThemeSpace({
-    sp0: spL0,
-    sp1: spL1,
-    sp2: spL2,
-    sp3: spL3,
-    sp4: spL4,
-    sp5: spL5,
-    sp6: spL6,
+    'sp-0': props['sp-l-0'],
+    'sp-1': props['sp-l-1'],
+    'sp-2': props['sp-l-2'],
+    'sp-3': props['sp-l-3'],
+    'sp-4': props['sp-l-4'],
+    'sp-5': props['sp-l-5'],
+    'sp-6': props['sp-l-6'],
     theme,
   });
 
   const right = getThemeSpace({
-    sp0: spR0,
-    sp1: spR1,
-    sp2: spR2,
-    sp3: spR3,
-    sp4: spR4,
-    sp5: spR5,
-    sp6: spR6,
+    'sp-0': props['sp-r-0'],
+    'sp-1': props['sp-r-1'],
+    'sp-2': props['sp-r-2'],
+    'sp-3': props['sp-r-3'],
+    'sp-4': props['sp-r-4'],
+    'sp-5': props['sp-r-5'],
+    'sp-6': props['sp-r-6'],
     theme,
   });
   const top = getThemeSpace({
-    sp0: spT0,
-    sp1: spT1,
-    sp2: spT2,
-    sp3: spT3,
-    sp4: spT4,
-    sp5: spT5,
-    sp6: spT6,
+    'sp-0': props['sp-t-0'],
+    'sp-1': props['sp-t-1'],
+    'sp-2': props['sp-t-2'],
+    'sp-3': props['sp-t-3'],
+    'sp-4': props['sp-t-4'],
+    'sp-5': props['sp-t-5'],
+    'sp-6': props['sp-t-6'],
     theme,
   });
   const bottom = getThemeSpace({
-    sp0: spB0,
-    sp1: spB1,
-    sp2: spB2,
-    sp3: spB3,
-    sp4: spB4,
-    sp5: spB5,
-    sp6: spB6,
+    'sp-0': props['sp-b-0'],
+    'sp-1': props['sp-b-1'],
+    'sp-2': props['sp-b-2'],
+    'sp-3': props['sp-b-3'],
+    'sp-4': props['sp-b-4'],
+    'sp-5': props['sp-b-5'],
+    'sp-6': props['sp-b-6'],
     theme,
   });
   return { left, right, top, bottom };

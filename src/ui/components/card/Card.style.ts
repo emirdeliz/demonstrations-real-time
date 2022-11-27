@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const CARD_WIDTH = '550px';
-const CARD_HEIGHT = '350px';
+const CARD_HEIGHT = '550px';
 
 export const Card = styled.div`
   border-radius: ${({ theme }) => theme.radius.Rd2};

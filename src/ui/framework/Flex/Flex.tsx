@@ -11,24 +11,24 @@ export interface FlexProps
     DRIThemeMarginProps,
     DRIThemeDisplayProps {
   children: ReactNode;
-  justifyStart?: boolean;
-  justifyEnd?: boolean;
-  justifyCenter?: boolean;
-  justifySpaceBetween?: boolean;
-  justifySpaceAround?: boolean;
-  justifyInitial?: boolean;
-  alignStart?: boolean;
-  alignEnd?: boolean;
-  alignCenter?: boolean;
-  alignSpaceBetween?: boolean;
-  alignSpaceAround?: boolean;
-  alignBaseline?: boolean;
-  alignInitial?: boolean;
+  'justify-start'?: boolean;
+  'justify-end'?: boolean;
+  'justify-center'?: boolean;
+  'justify-space-between'?: boolean;
+  'justify-space-around'?: boolean;
+  'justify-initial'?: boolean;
+  'align-start'?: boolean;
+  'align-end'?: boolean;
+  'align-center'?: boolean;
+  'align-space-between'?: boolean;
+  'align-space-around'?: boolean;
+  'align-baseline'?: boolean;
+  'align-initial'?: boolean;
   col?: boolean;
   row?: boolean;
   wrap?: boolean;
-  wFull?: boolean;
-  hFull?: boolean;
+  'w-full'?: boolean;
+  'h-full'?: boolean;
   role?: string;
 }
 
@@ -51,5 +51,5 @@ Flex.Col = (props: FlexProps) => {
 };
 
 Flex.Center = (props: FlexProps) => {
-  return <Flex {...props} justifyCenter alignCenter />;
+  return <Flex {...props} justify-center align-center />;
 };
