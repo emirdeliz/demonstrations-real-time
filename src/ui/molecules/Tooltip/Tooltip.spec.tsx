@@ -1,5 +1,5 @@
-import { fireEvent, screen, render } from '@/test';
-import { TooltipSimple } from '@/stories';
+import { fireEvent, screen, render } from '@test';
+import { TooltipSimple } from '@stories';
 import { Tooltip, TooltipProps } from '..';
 import { Story } from '@storybook/react';
 

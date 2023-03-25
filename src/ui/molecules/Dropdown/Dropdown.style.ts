@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { centerVerticalAbsolute, fullHorizontalAbsolute } from '@/theme';
+import { centerVerticalAbsolute, fullHorizontalAbsolute } from '@theme';
 
 const DROPDOWN_HEIGHT = '32px';
 const DROPDOWN_MIN_WIDTH = '150px';

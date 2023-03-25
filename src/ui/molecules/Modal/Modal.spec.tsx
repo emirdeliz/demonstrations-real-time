@@ -1,7 +1,7 @@
-import { screen, render } from '@/test';
-import { ModalSimple, ModalOverlay } from '@/stories';
+import { screen, render } from '@test';
+import { ModalSimple, ModalOverlay } from '@stories';
 import { Modal } from './Modal';
-import { Colors, Opacity } from '@/theme';
+import { Colors, Opacity } from '@theme';
 
 describe('Modal component test', () => {
   it('Have Modal', async () => {

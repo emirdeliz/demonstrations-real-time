@@ -1,15 +1,15 @@
 import { screen } from '@testing-library/react';
-import { render } from '@/test';
+import { render } from '@test';
 import {
   TitleCapitalize,
   TitleSemibold,
   TitleFontSize,
   TitleUpperCase,
-} from '@/stories';
+} from '@stories';
 import { Story } from '@storybook/react';
 import { TitleProps } from '..';
 import { Title } from './Title';
-import { FontSize, FontWeight } from '@/theme';
+import { FontSize, FontWeight } from '@theme';
 
 const renderTitle = async (title: Story<TitleProps>, props?: TitleProps) => {
   const Title = title;

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { getThemeColor } from '@/theme';
+import { getThemeColor } from '@theme';
 import { IconProps } from './Icon';
 
 const animation = css<IconProps>`

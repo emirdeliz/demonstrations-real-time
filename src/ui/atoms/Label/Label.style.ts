@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getFontSize, getThemeColor } from '@/theme';
+import { getFontSize, getThemeColor } from '@theme';
 import { LabelProps } from './Label';
 
 export const Label = styled.label<LabelProps>`

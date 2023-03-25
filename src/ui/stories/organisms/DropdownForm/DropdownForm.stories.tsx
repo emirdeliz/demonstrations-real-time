@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Story, Meta } from '@storybook/react';
-import { DropdownForm, DropdownFormProps } from '@/organisms';
-import { Modal } from '@/molecules';
-import { Flex } from '@/atoms';
-import { GenericObject } from '@/types';
+import { DropdownForm, DropdownFormProps } from '@organisms';
+import { Modal } from '@molecules';
+import { Flex } from '@atoms';
+import { GenericObject } from '@types';
 
 export default {
   title: 'Components/Organisms/DropdownForm',

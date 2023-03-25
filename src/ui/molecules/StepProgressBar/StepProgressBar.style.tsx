@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { centerHorizontalAbsolute, fullVerticalAbsolute } from '@/theme';
+import { centerHorizontalAbsolute, fullVerticalAbsolute } from '@theme';
 
 export const Container = styled.div`
   position: absolute;

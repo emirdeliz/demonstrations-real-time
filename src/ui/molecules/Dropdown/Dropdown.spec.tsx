@@ -1,8 +1,8 @@
 import { Story } from '@storybook/react';
 import { fireEvent, screen } from '@testing-library/react';
-import { GenericObject } from '@/types';
-import { DropdownOptionsWithObjects, DropdownSimple } from '@/stories';
-import { render } from '@/test';
+import { GenericObject } from '@types';
+import { DropdownOptionsWithObjects, DropdownSimple } from '@stories';
+import { render } from '@test';
 import { DropdownProps } from '..';
 
 const renderDropdown = async (

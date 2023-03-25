@@ -3,8 +3,8 @@ import {
   formatNumberAsCurrency,
   formatDateAsDDMMYYYYAndTime,
   formatStringOrNumberAsCnpj,
-} from '@/helpers';
-import { GenericObject } from '@/types';
+} from '@helpers';
+import { GenericObject } from '@types';
 import {
   TableColumnProps,
   TableProps,

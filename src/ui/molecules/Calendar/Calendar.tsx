@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { CalendarHeader, CalendarWeekDay } from './components';
-import { Flex } from '@/atoms';
-import { applyCorrectDateByLimitOfDaysOnMonth, WeekLabel } from '@/helpers';
+import { Flex } from '@atoms';
+import { applyCorrectDateByLimitOfDaysOnMonth, WeekLabel } from '@helpers';
 import { buildCalendarWeek } from './Calendar.logic';
 import * as S from './Calendar.style';
 

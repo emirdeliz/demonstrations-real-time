@@ -1,4 +1,4 @@
-import { centerAbsolute, topLeftAbsolute, topRightAbsolute } from '@/theme';
+import { centerAbsolute, topLeftAbsolute, topRightAbsolute } from '@theme';
 import styled, { DefaultTheme, css } from 'styled-components';
 import { ModalProps } from './Modal';
 

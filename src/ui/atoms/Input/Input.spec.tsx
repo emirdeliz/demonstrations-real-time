@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@/test';
+import { fireEvent, render, screen } from '@test';
 import {
   InputCnpj,
   InputCpf,
@@ -7,7 +7,7 @@ import {
   InputDate,
   InputText,
   InputTextArea,
-} from '@/stories';
+} from '@stories';
 import { Story } from '@storybook/react';
 import { InputProps } from '..';
 import { Input } from './Input';

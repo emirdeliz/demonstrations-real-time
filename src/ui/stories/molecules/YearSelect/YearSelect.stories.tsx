@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { YearSelect, YearSelectProps } from '@/molecules';
+import { YearSelect, YearSelectProps } from '@molecules';
 
 const figmaUrl =
   'https://www.figma.com/file/wW7x4g4eNApQg4LJ8VLcSa/Extrato?node-id=244%3A2542';

@@ -1,7 +1,7 @@
-import { render, screen, fireEvent, waitFor } from '@/test';
-import { LinkCalendarSimple } from '@/stories';
+import { render, screen, fireEvent, waitFor } from '@test';
+import { LinkCalendarSimple } from '@stories';
 import { Story } from '@storybook/react';
-import { formatDateAsDDMMYYYY } from '@/helpers';
+import { formatDateAsDDMMYYYY } from '@helpers';
 import { LinkCalendarProps } from './LinkCalendar';
 import { LinkCalendar } from './LinkCalendar';
 

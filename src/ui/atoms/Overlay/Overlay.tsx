@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { ZIndex } from '@/theme';
+import { ZIndex } from '@theme';
 import { createPortal } from 'react-dom';
 import * as S from './Overlay.style';
 

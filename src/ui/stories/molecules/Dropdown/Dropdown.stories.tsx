@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Story, Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Icon } from '@/atoms';
-import { Dropdown, DropdownProps } from '@/molecules';
-import { GenericObject } from '@/types';
+import { Icon } from '@atoms';
+import { Dropdown, DropdownProps } from '@molecules';
+import { GenericObject } from '@types';
 
 export default {
   title: 'Components/Molecules/Dropdown',

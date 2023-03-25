@@ -1,4 +1,4 @@
-import { Colors } from '@/theme';
+import { Colors } from '@theme';
 import styled from 'styled-components';
 
 export const Tab = styled.button<{ active?: boolean }>`

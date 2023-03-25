@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { buildMargin, getThemeColorByOptions, Padding, Size } from '@/theme';
+import { buildMargin, getThemeColorByOptions, Padding, Size } from '@theme';
 import { ButtonProps } from './Button';
 
 const getSize = ({ sm, xs }: Size): Array<Padding> => {

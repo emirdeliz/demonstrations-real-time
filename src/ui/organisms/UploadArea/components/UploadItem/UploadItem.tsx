@@ -1,4 +1,4 @@
-import { Flex, Input, Link, Title } from '@/atoms';
+import { Flex, Input, Link, Title } from '@atoms';
 import { ChangeEvent } from 'react';
 
 interface UploadItemProps {

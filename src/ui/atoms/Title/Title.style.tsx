@@ -4,7 +4,7 @@ import {
   getLineHeight,
   getThemeColor,
   getDisplay,
-} from '@/theme';
+} from '@theme';
 import styled from 'styled-components';
 import { TitleProps } from './Title';
 

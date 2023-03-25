@@ -1,6 +1,6 @@
 import { screen, fireEvent, waitFor } from '@testing-library/react';
-import { render } from '@/test';
-import { RadioSimple } from '@/stories';
+import { render } from '@test';
+import { RadioSimple } from '@stories';
 import { Story } from '@storybook/react';
 import { RadioProps } from '..';
 import { Radio } from './Radio';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Fade, FadeProps } from '@/atoms';
+import { Fade, FadeProps } from '@atoms';
 
 export default {
   title: 'Components/Atoms/Fade',

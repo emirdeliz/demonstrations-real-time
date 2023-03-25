@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { ModalTemplate, ModalTemplateProps } from '@/molecules';
-import { InputFormLabel } from '@/organisms';
+import { ModalTemplate, ModalTemplateProps } from '@molecules';
+import { InputFormLabel } from '@organisms';
 
 export default {
   title: 'Components/Molecules/ModalTemplate',

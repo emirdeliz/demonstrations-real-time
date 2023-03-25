@@ -1,5 +1,5 @@
-import { Button, Fade, Flex, Link, Overlay } from '@/atoms';
-import { ZIndex } from '@/theme';
+import { Button, Fade, Flex, Link, Overlay } from '@atoms';
+import { ZIndex } from '@theme';
 import React, { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import * as S from './Modal.style';

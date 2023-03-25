@@ -1,4 +1,4 @@
-import { centerAbsolute, fullAbsolute } from '@/theme';
+import { centerAbsolute, fullAbsolute } from '@theme';
 import styled, { css, keyframes } from 'styled-components';
 
 interface PathProps {

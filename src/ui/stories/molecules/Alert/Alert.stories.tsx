@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { Alert, AlertProps } from '@/molecules';
+import { Alert, AlertProps } from '@molecules';
 
 const figmaUrl =
   'https://www.figma.com/file/Wa3F6Lk4wkjEXnFMOa7YuU/Cadastro-das-taxas---Boleto-Zero?node-id=404%3A2877';

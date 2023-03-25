@@ -1,4 +1,4 @@
-import { GenericObject } from '@/types';
+import { GenericObject } from '@types';
 import { useCallback, useEffect, useRef } from 'react';
 
 export const usePreventUpdateUnmounted = <T>() => {

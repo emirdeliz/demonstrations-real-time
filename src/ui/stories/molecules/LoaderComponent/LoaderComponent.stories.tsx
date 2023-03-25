@@ -1,7 +1,7 @@
 import React, { ComponentType } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { LoaderComponent, LoaderComponentProps } from '@/molecules';
-import { IconProps } from '@/atoms';
+import { LoaderComponent, LoaderComponentProps } from '@molecules';
+import { IconProps } from '@atoms';
 import { setTimeout } from 'timers';
 
 export default {

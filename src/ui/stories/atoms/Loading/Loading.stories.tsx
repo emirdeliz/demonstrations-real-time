@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Loading, LoadingProps, LoadingProvider, useLoading } from '@/atoms';
+import { Loading, LoadingProps, LoadingProvider, useLoading } from '@atoms';
 
 export default {
   title: 'Components/Atoms/Loading',

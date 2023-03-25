@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Dropdown, DropdownProps, FormError, FormGroup } from '@/molecules';
-import { GenericObject } from '@/types';
+import { Dropdown, DropdownProps, FormError, FormGroup } from '@molecules';
+import { GenericObject } from '@types';
 
 export interface DropdownFormProps<T>
   extends Exclude<DropdownProps<T>, 'onChange'> {

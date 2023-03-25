@@ -1,4 +1,4 @@
-import { GenericObject } from '@/types';
+import { GenericObject } from '@types';
 import { ReactNode, useState } from 'react';
 import { TableBody, TableHeader } from './components';
 import { TablePagination } from './components/TablePagination/TablePagination';

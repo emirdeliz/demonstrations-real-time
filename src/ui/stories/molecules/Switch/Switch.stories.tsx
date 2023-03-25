@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Switch, SwitchProps } from '@/molecules';
+import { Switch, SwitchProps } from '@molecules';
 
 export default {
   title: 'Components/Molecules/Switch',

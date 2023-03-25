@@ -1,4 +1,4 @@
-import { getThemeColorByOptions, AppThemeOptions } from '@/theme';
+import { getThemeColorByOptions, AppThemeOptions } from '@theme';
 import styled, { css, keyframes } from 'styled-components';
 import { TooltipProps } from './Tooltip';
 

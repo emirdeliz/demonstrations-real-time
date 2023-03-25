@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Input, Link } from '@/atoms';
+import { Input, Link } from '@atoms';
 import { Title } from '../../../atoms/Title/Title.style';
-import { Modal, ModalProps } from '@/molecules';
+import { Modal, ModalProps } from '@molecules';
 
 export default {
   title: 'Components/Molecules/Modal',

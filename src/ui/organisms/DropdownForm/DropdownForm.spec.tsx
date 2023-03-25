@@ -1,11 +1,11 @@
 import { Story } from '@storybook/react';
-import { GenericObject } from '@/types';
+import { GenericObject } from '@types';
 import {
   DropdownFormRequired,
   DropdownFormSemibold,
   DropdownFormSimple,
-} from '@/stories';
-import { render, fireEvent, screen } from '@/test';
+} from '@stories';
+import { render, fireEvent, screen } from '@test';
 import { DropdownFormProps } from '..';
 
 const renderDropdownForm = async (

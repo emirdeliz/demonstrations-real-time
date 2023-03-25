@@ -1,11 +1,10 @@
-import { Banner, Card } from '@/components';
-import { Col, Flex, Input, Row, Title } from '@/atoms';
-import { t } from '@/i18n';
+import { Card } from '@components';
+import { Col, Flex, Input, Row, Title } from '@atoms';
+import { t } from '@i18n';
 
 export const HomePage = () => {
   return (
     <Flex.Col w-full h-full>
-      <Banner />
       <Title semibold center mt2 mb5>
         {t('home-page-demonstration-title-main')}
       </Title>

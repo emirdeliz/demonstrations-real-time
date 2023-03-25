@@ -1,7 +1,7 @@
 import { Story } from '@storybook/react';
 import { fireEvent } from '@testing-library/react';
-import { render, screen, waitFor } from '@/test';
-import { SwitchSimple } from '@/stories';
+import { render, screen, waitFor } from '@test';
+import { SwitchSimple } from '@stories';
 import { SwitchProps } from './Switch';
 
 const renderSwitch = async (

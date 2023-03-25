@@ -1,4 +1,4 @@
-import { getFontSize } from '@/theme';
+import { getFontSize } from '@theme';
 import styled from 'styled-components';
 import { Title } from '../Title/Title.style';
 import { LinkProps } from './Link';

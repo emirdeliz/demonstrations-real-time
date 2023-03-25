@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { SkeletonProps } from '@/atoms';
+import { SkeletonProps } from '@atoms';
 
 const animation = keyframes`
   0% {

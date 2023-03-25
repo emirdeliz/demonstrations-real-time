@@ -7,10 +7,10 @@ import React, {
   forwardRef,
   MutableRefObject,
 } from 'react';
-import { withFloat } from '@/atoms';
+import { withFloat } from '@atoms';
 import * as S from './Tooltip.style';
-import { GenericObject } from '@/types';
-import { AppThemeOptions } from '@/theme';
+import { GenericObject } from '@types';
+import { AppThemeOptions } from '@theme';
 
 export interface TooltipProps extends AppThemeOptions {
   invisible?: boolean;

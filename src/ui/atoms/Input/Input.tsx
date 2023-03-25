@@ -1,5 +1,5 @@
-import * as helpers from '@/helpers';
-import { FontSizeProps } from '@/theme';
+import * as helpers from '@helpers';
+import { FontSizeProps } from '@theme';
 import React, {
   ChangeEvent,
   ClipboardEvent,

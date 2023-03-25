@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fullHorizontalAbsolute, fullVerticalAbsolute } from '@/theme';
+import { fullHorizontalAbsolute, fullVerticalAbsolute } from '@theme';
 import { OverlayProps } from '..';
 
 export const Overlay = styled.div<OverlayProps>`

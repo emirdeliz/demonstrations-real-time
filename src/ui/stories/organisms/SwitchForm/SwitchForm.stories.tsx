@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { SwitchForm, SwitchFormInputProps, SwitchFormProps } from '@/organisms';
+import { SwitchForm, SwitchFormInputProps, SwitchFormProps } from '@organisms';
 
 const figmaUrl =
   'https://www.figma.com/file/ifCLiQochCsdkSATTKNBzh/Investimentos?node-id=402%3A2318';

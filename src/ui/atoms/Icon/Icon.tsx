@@ -1,5 +1,5 @@
 import React from 'react';
-import { ColorsProps } from '@/theme';
+import { ColorsProps } from '@theme';
 import * as S from './Icon.style';
 
 export interface IconOptions {

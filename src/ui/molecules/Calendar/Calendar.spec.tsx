@@ -1,11 +1,11 @@
 import { screen, fireEvent, waitFor } from '@testing-library/react';
-import { render } from '@/test';
-import { CalendarSimple, CalendarMinDate, CalendarMaxDate } from '@/stories';
+import { render } from '@test';
+import { CalendarSimple, CalendarMinDate, CalendarMaxDate } from '@stories';
 import { Story } from '@storybook/react';
 import { CalendarProps } from '..';
 import { Calendar } from './Calendar';
-import { Colors, Opacity } from '@/theme';
-import { getMonthByIndex } from '@/helpers';
+import { Colors, Opacity } from '@theme';
+import { getMonthByIndex } from '@helpers';
 
 const renderCalendar = async (
   calendar: Story<CalendarProps>,

@@ -1,14 +1,14 @@
 import { Story } from '@storybook/react';
-import { screen, fireEvent, render } from '@/test';
+import { screen, fireEvent, render } from '@test';
 import {
   ToastSimple,
   ToastDefault,
   ToastError,
   ToastSuccess,
   ToastWarn,
-} from '@/stories';
+} from '@stories';
 import { ToastProps } from '..';
-import { getThemeColorByOptions } from '@/theme';
+import { getThemeColorByOptions } from '@theme';
 
 const renderToast = async (toast: Story<ToastProps>, props?: ToastProps) => {
   const Toast = toast;

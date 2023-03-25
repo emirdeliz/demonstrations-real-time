@@ -1,6 +1,6 @@
 import React, { memo, ReactNode } from 'react';
-import { AppThemeOptions } from '@/theme';
-import { Flex, Link, ProgressBar, Title } from '@/atoms';
+import { AppThemeOptions } from '@theme';
+import { Flex, Link, ProgressBar, Title } from '@atoms';
 import {
   Context as ToastContext,
   Provider as ToastProvider,

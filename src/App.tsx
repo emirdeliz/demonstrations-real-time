@@ -1,33 +1,37 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import { useState, useMemo } from 'react';
+import { Reset } from 'styled-reset';
+import { DefaultTheme, ThemeProvider } from 'styled-components';
+import { LoadingProvider } from '@atoms';
+import { AppTheme, AppThemeColorDark, AppThemeColorLight } from '@theme';
+import { HomePage } from '@pages';
+import * as S from './App.style';
 
-function App() {
-  const [count, setCount] = useState(1);
+const App = () => {
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
+  const themeToggler = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
+  const theme = useMemo<DefaultTheme>(() => {
+    return {
+      ...AppTheme,
+      color: isDarkMode ? AppThemeColorDark : AppThemeColorLight,
+    };
+  }, [isDarkMode]);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + ReactAAAAAAAAAA</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <>
+      <Reset />
+      <S.Global />
+      <main>
+        <ThemeProvider theme={theme}>
+          <LoadingProvider>
+            <HomePage />
+          </LoadingProvider>
+        </ThemeProvider>
+      </main>
+    </>
   );
-}
+};
 
 export default App;

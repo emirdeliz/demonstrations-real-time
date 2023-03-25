@@ -5,7 +5,7 @@ import {
 } from './TablePagination.style';
 
 import { useEffect, useState } from 'react';
-import { Title } from '@/atoms';
+import { Title } from '@atoms';
 
 type PageProps = {
   index: number | null;

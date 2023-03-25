@@ -1,5 +1,5 @@
 import React, { memo, useMemo } from 'react';
-import { Flex, Title } from '@/atoms';
+import { Flex, Title } from '@atoms';
 import * as S from './CalendarWeekDay.style';
 import { checkDisabledCurrentDay } from '../../Calendar.logic';
 

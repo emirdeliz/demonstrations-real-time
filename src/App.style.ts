@@ -2,7 +2,13 @@ import { createGlobalStyle } from 'styled-components';
 
 const BODY_MIN_WIDTH = '300px';
 
-const Global = createGlobalStyle`
+export const Global = createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;800&display=swap");
+
+  * {
+    font-family: Poppins,sans-serif !important;
+  }
+
   html, body, body > div, main {
     margin: 0;
     padding: 0;
@@ -14,5 +20,3 @@ const Global = createGlobalStyle`
     min-width: ${BODY_MIN_WIDTH};
   }
 `;
-
-export default Global;

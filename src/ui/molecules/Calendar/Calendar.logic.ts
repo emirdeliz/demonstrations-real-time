@@ -1,4 +1,4 @@
-import { checkingIfDateIsGreaterThanAnotherIgnoringTime } from '@/helpers';
+import { checkingIfDateIsGreaterThanAnotherIgnoringTime } from '@helpers';
 
 export const getCurrentData = (date: Date) => {
   const currentDate = new Date(date);

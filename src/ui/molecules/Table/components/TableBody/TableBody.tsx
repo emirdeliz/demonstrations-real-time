@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
-import { GenericObject } from '@/types';
-import { Title } from '@/atoms';
+import { GenericObject } from '@types';
+import { Title } from '@atoms';
 import { sortTableValues, buildDataSource } from './TableBody.logic';
 import * as S from './TableBody.style';
 import { TableHeaderProps } from '..';

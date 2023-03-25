@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Flex, Input, InputProps } from '@/atoms';
+import { Flex, Input, InputProps } from '@atoms';
 
 export default {
   title: 'Components/Atoms/Input',

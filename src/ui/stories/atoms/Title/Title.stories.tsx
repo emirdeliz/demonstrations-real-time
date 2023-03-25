@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Flex, Title, TitleProps } from '@/atoms';
+import { Flex, Title, TitleProps } from '@atoms';
 
 export default {
   title: 'Components/Atoms/Title',

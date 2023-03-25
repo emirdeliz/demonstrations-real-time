@@ -5,8 +5,8 @@ import {
   UploadAreaListProps,
   UploadAreaProps,
   UploadInputItem,
-} from '@/organisms';
-import { Flex } from '@/atoms';
+} from '@organisms';
+import { Flex } from '@atoms';
 
 const figmaUrl =
   'https://www.figma.com/file/WBwjhYPSkQ75nVc4E0Gvu6/Demonstrativo-Financeiro?node-id=324%3A1519';

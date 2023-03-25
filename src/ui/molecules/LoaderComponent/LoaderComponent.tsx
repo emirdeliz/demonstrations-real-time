@@ -7,8 +7,8 @@ import {
   ReactNode,
   LazyExoticComponent,
 } from 'react';
-import { GenericObject } from '@/types';
-import { Loading } from '@/atoms';
+import { GenericObject } from '@types';
+import { Loading } from '@atoms';
 
 type ComponentProps<T> = PropsWithRef<T & { children?: ReactNode }>;
 

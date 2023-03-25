@@ -1,6 +1,6 @@
 import * as S from './ContentInfoRow.style';
-import { Label, Title } from '@/atoms';
-import { ShowSkeleton } from '@/molecules';
+import { Label, Title } from '@atoms';
+import { ShowSkeleton } from '@molecules';
 
 export interface ContentInfoRowProps {
   title: string;

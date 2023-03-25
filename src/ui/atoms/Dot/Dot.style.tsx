@@ -1,4 +1,4 @@
-import { getThemeColor } from '@/theme';
+import { getThemeColor } from '@theme';
 import styled, { DefaultTheme } from 'styled-components';
 import { DotProps } from './Dot';
 

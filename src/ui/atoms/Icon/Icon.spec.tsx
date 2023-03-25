@@ -1,5 +1,5 @@
-import { Colors } from '@/theme';
-import { render } from '@/test';
+import { Colors } from '@theme';
+import { render } from '@test';
 import { Icon } from './Icon';
 import { FontSize } from './Icon.style';
 

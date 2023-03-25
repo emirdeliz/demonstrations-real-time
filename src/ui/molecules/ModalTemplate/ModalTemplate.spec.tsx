@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { render } from '@/test';
-import { ModalTemplateSimple, ModalTemplateTitleAndSubTitle } from '@/stories';
+import { render } from '@test';
+import { ModalTemplateSimple, ModalTemplateTitleAndSubTitle } from '@stories';
 import { ModalTemplate, ModalTemplateProps } from '..';
 
 const renderModalTemplate = async (

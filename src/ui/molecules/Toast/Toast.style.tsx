@@ -1,4 +1,4 @@
-import { getThemeColorByOptions, AppThemeOptions } from '@/theme';
+import { getThemeColorByOptions, AppThemeOptions } from '@theme';
 import styled from 'styled-components';
 import { Title } from '../../atoms/Title/Title.style';
 

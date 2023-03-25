@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useMemo } from 'react';
-import { Flex, Link, Title } from '@/atoms';
-import { getMonthByIndex } from '@/helpers';
+import { Flex, Link, Title } from '@atoms';
+import { getMonthByIndex } from '@helpers';
 
 interface CalendarHeaderProps {
   children: string;

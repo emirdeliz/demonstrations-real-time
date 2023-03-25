@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { FormGroup } from '../FormGroup/FormGroup.style';
-import { getMargin } from '@/theme';
+import { getMargin } from '@theme';
 
 export const Container = styled.form`
   width: 100%;

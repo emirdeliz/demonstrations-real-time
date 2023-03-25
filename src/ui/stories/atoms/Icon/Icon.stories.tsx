@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Flex, Icon, IconProps } from '@/atoms';
+import { Flex, Icon, IconProps } from '@atoms';
 
 export default {
   title: 'Components/Atoms/Icon',

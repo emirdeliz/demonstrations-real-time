@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Story, Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { LinkCalendar, LinkCalendarProps } from '@/organisms';
+import { LinkCalendar, LinkCalendarProps } from '@organisms';
 
 const figmaUrl =
   'https://www.figma.com/file/HraHHrgUSx4NkPMrMJnM2G/Pagamentos?node-id=75%3A5735';

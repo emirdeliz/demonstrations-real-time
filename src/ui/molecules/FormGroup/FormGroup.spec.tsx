@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { render } from '@/test';
-import { FormGroupSimple, FormGroupTextArea } from '@/stories';
+import { render } from '@test';
+import { FormGroupSimple, FormGroupTextArea } from '@stories';
 import { FormGroupProps } from '..';
 
 const renderFormGroup = async (

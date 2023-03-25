@@ -1,5 +1,5 @@
-import { Flex, Label } from '@/atoms';
-import { FontSizeProps } from '@/theme';
+import { Flex, Label } from '@atoms';
+import { FontSizeProps } from '@theme';
 import React, { ReactNode } from 'react';
 import * as S from './FormGroup.style';
 

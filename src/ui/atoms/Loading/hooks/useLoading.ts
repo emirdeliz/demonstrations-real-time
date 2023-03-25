@@ -1,4 +1,4 @@
-import { LoadingContext } from '@/atoms';
+import { LoadingContext } from '@atoms';
 import { useCallback, useContext, useMemo } from 'react';
 
 export interface LoadingSimpleMessageProps {

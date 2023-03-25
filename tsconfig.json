@@ -17,40 +17,43 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@/atoms": [
-        "src/ui/atoms/"
+      "@atoms": [
+        "src/ui/atoms"
       ],
-      "@/molecules": [
+      "@molecules": [
         "src/ui/molecules"
       ],
-      "@/organisms": [
+      "@organisms": [
         "src/ui/organisms"
       ],
-      "@/components": [
+      "@components": [
         "src/ui/components"
       ],
-      "@/theme": [
+      "@theme": [
         "src/ui/system/theme"
       ],
-      "@/i18n": [
+      "@i18n": [
         "src/ui/system/i18n"
       ],
-      "@/stories": [
+      "@pages": [
+        "src/ui/pages"
+      ],
+      "@stories": [
         "src/ui/stories"
       ],
-      "@/hooks": [
+      "@hooks": [
         "src/hooks"
       ],
-      "@/helpers": [
+      "@helpers": [
         "src/helpers"
       ],
-      "@/types": [
+      "@types": [
         "src/types"
       ],
-      "@/utils": [
+      "@utils": [
         "src/utils"
       ],
-      "@/test": [
+      "@test": [
         "test"
       ]
     }

@@ -1,5 +1,5 @@
 import { render, screen } from 'test';
-import { InputFormLabelForm } from '@/stories';
+import { InputFormLabelForm } from '@stories';
 
 describe('framework/organisms/InputFormLabel', () => {
   const onInputChange = jest.fn();

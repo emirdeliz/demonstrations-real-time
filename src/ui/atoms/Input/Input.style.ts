@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { getFontSize } from '@/theme';
+import { getFontSize } from '@theme';
 import { InputProps } from './Input';
 
 const inputBase = css`

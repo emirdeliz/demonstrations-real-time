@@ -1,4 +1,4 @@
-import { replaceByIndex } from '@/helpers';
+import { replaceByIndex } from '@helpers';
 
 export const hideMail = (mail: string) => {
   const mailIndex = mail.indexOf('@');

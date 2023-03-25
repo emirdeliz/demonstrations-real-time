@@ -6,8 +6,8 @@ import React, {
   useMemo,
   useRef,
 } from 'react';
-import { Colors } from '@/theme';
-import { Button, Flex, Icon, IconOptions, Title } from '@/atoms';
+import { Colors } from '@theme';
+import { Button, Flex, Icon, IconOptions, Title } from '@atoms';
 import { UploadList } from './components';
 import * as S from './UploadArea.style';
 

@@ -1,5 +1,5 @@
-import { render } from '@/test';
-import { StepProgressBarSimple, StepProgressBarCheckFromProp } from '@/stories';
+import { render } from '@test';
+import { StepProgressBarSimple, StepProgressBarCheckFromProp } from '@stories';
 import { StepProgressBar, StepProgressBarProps } from '..';
 import { Story } from '@storybook/react';
 

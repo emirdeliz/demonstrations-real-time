@@ -1,5 +1,5 @@
 import { useCallback, useContext, useEffect } from 'react';
-import { ToastContext } from '@/molecules';
+import { ToastContext } from '@molecules';
 import { ToastItemProps, TOAST_DEFAULT_DISMISS_SECONDS } from '../Toast';
 
 interface ToastSimpleMessageProps

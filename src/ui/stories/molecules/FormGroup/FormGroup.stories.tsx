@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Input } from '@/atoms';
-import { FormGroup, FormGroupChildrenProps } from '@/molecules';
+import { Input } from '@atoms';
+import { FormGroup, FormGroupChildrenProps } from '@molecules';
 
 export default {
   title: 'Components/molecules/FormGroup',

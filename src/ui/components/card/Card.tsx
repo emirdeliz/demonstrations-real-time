@@ -1,4 +1,4 @@
-import { Flex } from '@/atoms';
+import { Flex } from '@atoms';
 import * as S from './Card.style';
 
 export const Card = () => {

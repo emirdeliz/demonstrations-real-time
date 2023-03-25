@@ -1,4 +1,4 @@
-import { disableElement } from '@/theme';
+import { disableElement } from '@theme';
 import styled from 'styled-components';
 
 export const Table = styled.table`

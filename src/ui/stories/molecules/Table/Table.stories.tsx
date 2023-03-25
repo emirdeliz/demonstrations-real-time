@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import mocker from 'mocker-data-generator';
-import { Table, TableColumnProps, TableProps } from '@/molecules';
-import { GenericObject } from '@/types';
+import { Table, TableColumnProps, TableProps } from '@molecules';
+import { GenericObject } from '@types';
 
 export default {
   title: 'Components/Molecules/Table',

@@ -1,4 +1,4 @@
-import { GenericObject } from '@/types';
+import { GenericObject } from '@types';
 import React, {
   useEffect,
   useState,

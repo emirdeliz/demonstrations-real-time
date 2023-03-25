@@ -1,4 +1,4 @@
-import { MarginProps, Size, AppThemeOptions } from '@/theme';
+import { MarginProps, Size, AppThemeOptions } from '@theme';
 import { MouseEventHandler, ReactNode } from 'react';
 import * as S from './Button.style';
 

@@ -1,7 +1,7 @@
 import { ChangeEvent, useMemo, useState } from 'react';
-import { updateArray } from '@/helpers';
-import { Flex, Title } from '@/atoms';
-import { UploadInputItem } from '@/organisms';
+import { updateArray } from '@helpers';
+import { Flex, Title } from '@atoms';
+import { UploadInputItem } from '@organisms';
 import { UploadItem } from '..';
 
 interface UploadListProps {

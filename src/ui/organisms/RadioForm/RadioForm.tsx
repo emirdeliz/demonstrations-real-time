@@ -1,5 +1,5 @@
 import { ReactNode, useMemo } from 'react';
-import { Flex, Radio, RadioProps } from '@/atoms';
+import { Flex, Radio, RadioProps } from '@atoms';
 import * as S from './RadioForm.style';
 
 interface RadioOption {

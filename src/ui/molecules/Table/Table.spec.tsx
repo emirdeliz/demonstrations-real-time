@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react';
-import { fireEvent, render, screen, waitFor } from '@/test';
-import { TableSimple } from '@/stories';
+import { fireEvent, render, screen, waitFor } from '@test';
+import { TableSimple } from '@stories';
 import { TableProps } from './Table';
 import { sortTableValues } from './components/TableBody/TableBody.logic';
 import { TableColumnProps, TableSort } from '..';
@@ -8,8 +8,8 @@ import {
   formatNumberAsCurrency,
   formatDateAsDDMMYYYY,
   formatDateAsDDMMYYYYAndTime,
-} from '@/helpers';
-import { GenericObject } from '@/types';
+} from '@helpers';
+import { GenericObject } from '@types';
 
 const renderTable = async (
   tableEl: Story<TableProps<GenericObject>>,

@@ -1,8 +1,8 @@
 import { fireEvent, screen } from '@testing-library/react';
-import { render } from '@/test';
+import { render } from '@test';
 import YearSelect from './YearSelect';
 
-describe('@/atoms/YearSelect', () => {
+describe('@atoms/YearSelect', () => {
   it('Should have a button', async () => {
     render(<YearSelect startDate={new Date()} onClick={() => {}} />);
     const button = screen.getByRole('button', {

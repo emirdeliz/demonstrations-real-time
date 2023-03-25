@@ -1,4 +1,4 @@
-import { Flex } from '@/atoms';
+import { Flex } from '@atoms';
 import React, { ReactNode } from 'react';
 import * as S from './Overflow.style';
 

@@ -1,5 +1,5 @@
-import { GenericObject } from '@/types';
-import { Flex, Icon } from '@/atoms';
+import { GenericObject } from '@types';
+import { Flex, Icon } from '@atoms';
 import { useCallback } from 'react';
 import { TableProps, TableSort, TableSortProps } from '../../Table';
 import * as S from './TableHeader.style';

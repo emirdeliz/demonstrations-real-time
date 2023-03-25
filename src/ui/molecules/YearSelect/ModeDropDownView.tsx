@@ -1,7 +1,7 @@
-import { Button } from '@/atoms';
+import { Button } from '@atoms';
 import { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
-import { getMargin, MarginProps } from '@/theme';
+import { getMargin, MarginProps } from '@theme';
 
 interface ModeDropDownViewProps {
   selectedDate: number;

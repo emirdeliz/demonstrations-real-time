@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Story, Meta } from '@storybook/react';
 import { withDesign } from 'storybook-addon-designs';
-import { StepProgressBar, StepProgressBarProps } from '@/molecules';
+import { StepProgressBar, StepProgressBarProps } from '@molecules';
 
 const figmaUrl =
   'https://www.figma.com/file/l4dKz7vQKLDWvBBK3Vjjqa/Cadastro-da-Administradora?node-id=3%3A530';

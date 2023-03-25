@@ -1,5 +1,5 @@
 import React, { MouseEvent, ReactNode } from 'react';
-import { Button, Flex, Title } from '@/atoms';
+import { Button, Flex, Title } from '@atoms';
 import * as S from './ModalTemplate.style';
 
 export interface ModalTemplateProps {

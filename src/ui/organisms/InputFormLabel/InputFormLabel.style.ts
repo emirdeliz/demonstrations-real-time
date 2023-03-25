@@ -1,7 +1,7 @@
 import { Input as InputStyle } from '../../atoms/Input/Input.style';
 import { Title as TitleStyle } from '../../atoms/Title/Title.style';
-import { TitleProps } from '@/atoms';
-import { fullTopRightAbsolute } from '@/theme';
+import { TitleProps } from '@atoms';
+import { fullTopRightAbsolute } from '@theme';
 import styled from 'styled-components';
 
 export const InputFormLabel = styled.div`

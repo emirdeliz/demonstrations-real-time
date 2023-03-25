@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import { Flex } from '@/atoms';
-import { MarginProps } from '@/theme';
+import { Flex } from '@atoms';
+import { MarginProps } from '@theme';
 import * as S from './Form.style';
 
 interface FormChildrenProps extends MarginProps {

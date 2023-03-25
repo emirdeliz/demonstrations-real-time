@@ -6,10 +6,10 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import { Fade, Icon, Link } from '@/atoms';
-import { Calendar, CalendarProps } from '@/molecules';
-import { formatDateAsYYYYMMDD } from '@/helpers';
-import { useOnClickOutside } from '@/hooks';
+import { Fade, Icon, Link } from '@atoms';
+import { Calendar, CalendarProps } from '@molecules';
+import { formatDateAsYYYYMMDD } from '@helpers';
+import { useOnClickOutside } from '@hooks';
 import * as S from './LinkCalendar.style';
 
 export interface LinkCalendarProps extends CalendarProps {

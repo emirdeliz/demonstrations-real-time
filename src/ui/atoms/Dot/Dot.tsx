@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { ColorsProps } from '@/theme';
+import { ColorsProps } from '@theme';
 import * as S from './Dot.style';
 export interface DotProps extends ColorsProps {
   xss?: boolean;

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { ColorsProps, FontSizeProps } from '@/theme';
+import { ColorsProps, FontSizeProps } from '@theme';
 import * as S from './Label.style';
 
 export interface LabelProps extends ColorsProps, FontSizeProps {

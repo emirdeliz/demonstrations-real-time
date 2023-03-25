@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { ProgressBar, ProgressBarProps } from '@/atoms';
+import { ProgressBar, ProgressBarProps } from '@atoms';
 
 export default {
   title: 'Components/Atoms/ProgressBar',

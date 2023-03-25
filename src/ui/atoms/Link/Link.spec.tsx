@@ -1,5 +1,5 @@
-import { render } from '@/test';
-import { LinkIcon, LinkSimple } from '@/stories';
+import { render } from '@test';
+import { LinkIcon, LinkSimple } from '@stories';
 import { Story } from '@storybook/react';
 import { LinkProps } from '..';
 import { Link } from './Link';

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Toast, ToastProps, ToastProvider, useToast } from '@/molecules';
-import { Link } from '@/atoms';
-import { AppThemeOptions } from '@/theme';
+import { Toast, ToastProps, ToastProvider, useToast } from '@molecules';
+import { Link } from '@atoms';
+import { AppThemeOptions } from '@theme';
 
 export default {
   title: 'Components/Molecules/Toast',

@@ -1,5 +1,5 @@
-import { Input, InputProps } from '@/atoms';
-import { FormGroup } from '@/molecules';
+import { Input, InputProps } from '@atoms';
+import { FormGroup } from '@molecules';
 import { ChangeEvent } from 'react';
 import * as S from './InputFormLabel.style';
 

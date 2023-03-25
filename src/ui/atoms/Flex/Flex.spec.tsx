@@ -1,4 +1,4 @@
-import { render } from '@/test';
+import { render } from '@test';
 import { Flex } from './Flex';
 
 describe('Flex component test', () => {

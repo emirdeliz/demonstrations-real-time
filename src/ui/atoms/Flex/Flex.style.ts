@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { buildMargin, buildPadding } from '@/theme';
+import { buildMargin, buildPadding } from '@theme';
 import { FlexProps } from './Flex';
 
 const getAlign = (

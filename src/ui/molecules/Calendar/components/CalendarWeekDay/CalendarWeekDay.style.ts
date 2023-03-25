@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { CALENDAR_DAY_WIDTH } from '@/molecules';
+import { CALENDAR_DAY_WIDTH } from '@molecules';
 import { centerAbsolute, disableElement } from '../../../../system/theme';
 import { Title } from '../../../../atoms/Title/Title.style';
 

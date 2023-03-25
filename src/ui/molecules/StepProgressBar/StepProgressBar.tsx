@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Flex, Dot, DotProps, Icon, Title } from '@/atoms';
+import { Flex, Dot, DotProps, Icon, Title } from '@atoms';
 import * as S from './StepProgressBar.style';
 
 interface StepProgressBarItemProps extends DotProps {

@@ -1,7 +1,7 @@
 import React, { ReactNode, useMemo, useState } from 'react';
-import { Fade, Flex, Icon, Input, Title } from '@/atoms';
-import { MarginProps } from '@/theme';
-import { GenericObject } from '@/types';
+import { Fade, Flex, Icon, Input, Title } from '@atoms';
+import { MarginProps } from '@theme';
+import { GenericObject } from '@types';
 import {
   DropdownSelectedItemProps,
   getOptionsFiltered,

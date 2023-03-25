@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import { InputFormLabel, InputFormLabelFormProps } from '@/organisms';
+import { InputFormLabel, InputFormLabelFormProps } from '@organisms';
 import React, { useState } from 'react';
 
 const figmaUrl =

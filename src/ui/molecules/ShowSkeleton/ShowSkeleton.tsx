@@ -1,4 +1,4 @@
-import { Skeleton, SkeletonProps } from '@/atoms';
+import { Skeleton, SkeletonProps } from '@atoms';
 import React, { ReactNode } from 'react';
 
 export interface ShowSkeletonProps extends SkeletonProps {

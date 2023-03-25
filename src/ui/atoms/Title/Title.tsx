@@ -6,7 +6,7 @@ import {
   LineHeightProps,
   MarginProps,
   DisplayProps,
-} from '@/theme';
+} from '@theme';
 import * as S from './Title.style';
 
 export interface TitleProps

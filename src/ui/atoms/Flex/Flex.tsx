@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { MarginProps, PaddingProps } from '@/theme';
+import { MarginProps, PaddingProps } from '@theme';
 import * as S from './Flex.style';
 
 export interface FlexProps extends MarginProps, PaddingProps {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import { Row, RowProps, Col } from '@/atoms';
+import { Row, RowProps, Col } from '@atoms';
 import styled from 'styled-components';
 
 export default {

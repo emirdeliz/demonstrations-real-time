@@ -1,10 +1,10 @@
 import { screen, waitFor } from '@testing-library/react';
-import { render } from '@/test';
+import { render } from '@test';
 import { Story } from '@storybook/react';
-import { AlertSimple, AlertInfo } from '@/stories';
+import { AlertSimple, AlertInfo } from '@stories';
 import { Alert } from './Alert';
 import { AlertProps } from '..';
-import { Colors } from '@/theme';
+import { Colors } from '@theme';
 
 const renderAlert = async (alert: Story<AlertProps>, props?: AlertProps) => {
   const Alert = alert;

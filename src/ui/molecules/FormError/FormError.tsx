@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { MarginProps } from '@/theme';
+import { MarginProps } from '@theme';
 import * as S from './FormError.style';
 
 interface FormErrorChildrenProps extends MarginProps {

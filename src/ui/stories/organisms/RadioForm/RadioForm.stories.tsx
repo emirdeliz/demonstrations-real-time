@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, Story } from '@storybook/react';
-import { RadioForm, RadioFormProps } from '@/organisms';
+import { RadioForm, RadioFormProps } from '@organisms';
 
 const figmaUrl =
   'https://www.figma.com/file/HraHHrgUSx4NkPMrMJnM2G/Pagamentos?node-id=75%3A5735';

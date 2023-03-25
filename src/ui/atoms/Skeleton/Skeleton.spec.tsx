@@ -1,4 +1,4 @@
-import { render } from '@/test';
+import { render } from '@test';
 import { Skeleton } from './Skeleton';
 
 describe('Skeleton component test', () => {

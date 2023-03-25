@@ -1,6 +1,6 @@
 import { fireEvent } from '@testing-library/react';
-import { render } from '@/test';
-import { Colors, Opacity, Padding } from '@/theme';
+import { render } from '@test';
+import { Colors, Opacity, Padding } from '@theme';
 import { Button } from './Button';
 
 describe('Button component test', () => {
