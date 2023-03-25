@@ -1,2 +1,3 @@
-export * from './banner/Banner';
-export * from './card/Card';
+export * from './Banner/Banner';
+export * from './Card/Card';
+export * from './Logo/Logo';
