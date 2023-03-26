@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
-import { getFontSize } from '@theme';
+import { buildMargin, buildPadding, getFontSize } from '@theme';
 import { InputProps } from './Input';
 
 const inputBase = css`
   width: 100%;
   height: 100%;
-  border: 0;
+  border: solid 1px ${({ theme }) => theme.colors.N3};
   background-color: transparent;
   color: ${({ theme }) => theme.colors.P1};
   outline-color: ${({ theme }) => theme.colors.P2};
@@ -29,6 +29,8 @@ const inputBase = css`
   &::-ms-input-placeholder {
     color: ${({ theme }) => theme.colors.N3};
   }
+  ${buildMargin()}
+  ${buildPadding()}
 `;
 
 export const Input = styled.input.attrs(({ password }: InputProps) => ({
@@ -49,8 +51,6 @@ export const TextArea = styled.textarea.attrs({
 export const Container = styled.div<InputProps>`
   display: flex;
   flex: 1;
-  background-color: ${({ theme, transparent }) =>
-    transparent ? 'transparent' : theme.colors.N5};
   border-radius: ${({ theme }) => theme.radius.Sm};
 `;
 

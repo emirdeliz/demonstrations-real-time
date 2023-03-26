@@ -1,5 +1,5 @@
 import * as helpers from '@helpers';
-import { FontSizeProps } from '@theme';
+import { FontSizeProps, MarginProps, PaddingProps } from '@theme';
 import React, {
   ChangeEvent,
   ClipboardEvent,
@@ -23,7 +23,11 @@ const INPUT_CNPJ_MAX_LENGTH_DEFAULT = 18;
 const INPUT_PHONE_MAX_LENGTH_DEFAULT = 15;
 const INPUT_BARCODE_MAX_LENGTH_DEFAULT = 55;
 
-export interface InputProps extends FormControl, FontSizeProps {
+export interface InputProps
+  extends FormControl,
+    FontSizeProps,
+    PaddingProps,
+    MarginProps {
   rg?: boolean;
   cpf?: boolean;
   cnpj?: boolean;

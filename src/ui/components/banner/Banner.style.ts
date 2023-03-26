@@ -1,18 +1,16 @@
 import styled from 'styled-components';
 
-const BANNER_HEIGHT = '70px';
 const BANNER_MAX_WIDTH = '800px';
 
 export const Banner = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
 }
 `;
 
-export const Top = styled.div`
-  display: flex;
+export const Img = styled.img`
   flex: 1;
-  height: ${BANNER_HEIGHT};
-  max-width: ${BANNER_MAX_WIDTH};
+  max-width: 100%;
 `;
