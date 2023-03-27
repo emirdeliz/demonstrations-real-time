@@ -1,4 +1,4 @@
-import { Banner, Card } from '@components';
+import { Banner, Card } from 'src/ui/templates';
 import { Col, Flex, Input, Row, Title } from '@atoms';
 import { t } from '@i18n';
 
